@@ -1,0 +1,110 @@
+{
+  "funds": {
+    "DOM": {
+      "name": "Blastoise Relief Fund",
+      "cvType": "Domain",
+      "limits": {
+        "singleRequestMax": 7500,
+        "twelveMonthMax": 15000,
+        "lifetimeMax": 50000
+      },
+      "eligibleDisasters": [
+        "Flood",
+        "House Fire",
+        "Tornado",
+        "Tropical Storm/Hurricane"
+      ],
+      "eligibleHardships": [
+        "Death",
+        "Housing Crisis"
+      ],
+      "eligibleEmploymentTypes": [
+        "Active Full Time",
+        "Active Part Time"
+      ],
+      "domainConfig": {
+        "allowedDomains": [
+          "example.com",
+          "fakemail.example"
+        ]
+      },
+      "eligibleStorms": [
+        "Hurricane Kyogre",
+        "Tropical Storm Lugia",
+        "Typhoon Manaphy"
+      ],
+      "supportEmail": "dom-support@example.com",
+      "supportPhone": "(800) 555-1111",
+      "supportedLanguages": ["en", "es", "ja"]
+    },
+    "ROST": {
+      "name": "Charizard Relief Fund",
+      "cvType": "Roster",
+      "limits": {
+        "singleRequestMax": 5000,
+        "twelveMonthMax": 10000,
+        "lifetimeMax": 25000
+      },
+      "eligibleDisasters": [
+        "Earthquake",
+        "Wildfire",
+        "Winter Storm"
+      ],
+      "eligibleHardships": [
+        "Crime",
+        "Household Loss of Income"
+      ],
+      "eligibleEmploymentTypes": [
+        "Active Full Time",
+        "Full Time Short Term Disability"
+      ],
+      "rosterConfig": {
+        "sampleEligibilityRecords": [
+          {
+            "employeeId": "1",
+            "birthMonth": 1,
+            "birthDay": 1
+          },
+          {
+            "employeeId": "2",
+            "birthMonth": 2,
+            "birthDay": 2
+          }
+        ]
+      },
+      "supportEmail": "rost-support@example.com",
+      "supportPhone": "(800) 555-2222",
+      "supportedLanguages": ["en", "es", "ja"]
+    },
+    "SSO": {
+      "name": "Venusaur Relief Fund",
+      "cvType": "SSO",
+      "limits": {
+        "singleRequestMax": 10000,
+        "twelveMonthMax": 20000,
+        "lifetimeMax": 100000
+      },
+      "eligibleDisasters": [
+        "Commercial Carrier Accident",
+        "Landslide",
+        "Sinkhole",
+        "Typhoon",
+        "Volcanic Eruption"
+      ],
+      "eligibleHardships": [
+        "Home Damage (leaks or broken pipes)",
+        "Mental Health and Well-Being",
+        "Workplace Disruption"
+      ],
+      "eligibleEmploymentTypes": [
+        "Active Full Time",
+        "Active Part Time",
+        "Full-Time on FMLA (U.S. only)",
+        "Part-Time on FMLA (U.S. only)"
+      ],
+      "supportEmail": "sso-support@example.com",
+      "supportPhone": "(800) 555-3333",
+      "supportedLanguages": ["en", "es", "ja"]
+    }
+  }
+}

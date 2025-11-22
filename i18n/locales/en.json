@@ -1,0 +1,515 @@
+
+{
+  "common": {
+    "next": "Next",
+    "back": "Back",
+    "submit": "Submit",
+    "save": "Save Changes",
+    "cancel": "Cancel",
+    "verify": "Verify",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "yes": "Yes",
+    "no": "No",
+    "unknownError": "An unknown error occurred.",
+    "aiApplyingDetails": "We are applying your details to the application now.",
+    "close": "Close",
+    "eligible": "Eligible",
+    "ineligible": "Ineligible",
+    "collapse": "Collapse"
+  },
+  "applicationStatus": {
+    "Submitted": "Submitted",
+    "Awarded": "Awarded",
+    "Declined": "Declined"
+  },
+  "sessionTimeout": {
+    "title": "Session Expiring",
+    "body": "For security, your session will time out in:",
+    "logoutButton": "Logout Now",
+    "extendButton": "Extend Session"
+  },
+  "reliefQueue": {
+    "helpRoster": "Your company provides E4E Relief a roster of eligible employees. Please make sure your eligibility criteria is entered exactly as your employer has it on record.",
+    "helpDomain": "Your employer enforces an email domain allow list in order to register for this application. Please make sure to register a new account with your company provided email address.",
+    "helpSSO": "Your employer supports SSO. If you have reached the relief Queue after successfully authenticating with your employer than reach out to our <phoneLink>{{phone}}</phoneLink> or <emailLink>{{email}}</emailLink>."
+  },
+  "eligibilityIndicator": {
+    "eligibleMessage": "You are verified for this relief funds program. Applying for relief does not guarantee a payment will be disbursed.",
+    "verificationNeededMessage": "Visit 'Fund Identities' in your Profile page to verify yourself to be eligible for relief."
+  },
+  "app": {
+    "loading": "Loading...",
+    "authenticating": "Authenticating...",
+    "loadingProfile": "Loading Profile..."
+  },
+  "nav": {
+    "home": "Home",
+    "profile": "Profile",
+    "apply": "Apply",
+    "aiApply": "AI Apply",
+    "support": "Support",
+    "donate": "Donate",
+    "fundPortal": "Fund",
+    "logout": "Logout",
+    "welcome": "Welcome, {{name}}"
+  },
+  "loginPage": {
+    "emailLabel": "Email Address",
+    "passwordLabel": "Password",
+    "signInButton": "Sign In",
+    "noAccount": "Don't have an account?",
+    "signUpLink": "Sign Up",
+    "errorGeneric": "Please enter both email and password.",
+    "errorInvalid": "Invalid email or password. Please try again.",
+    "forgotPasswordLink": "Forgot password?"
+  },
+  "forgotPasswordPage": {
+    "title": "Reset Password",
+    "instruction": "Enter your email address and we'll send you a link to reset your password.",
+    "sendButton": "Send Reset Link",
+    "backToLogin": "Back to Sign In",
+    "successMessage": "If an account with that email exists, a password reset link has been sent. Please check your inbox.",
+    "errorGeneric": "An unexpected error occurred. Please try again.",
+    "errorEmailRequired": "Please enter a valid email address."
+  },
+  "registerPage": {
+    "firstNameLabel": "First Name",
+    "lastNameLabel": "Last Name",
+    "emailLabel": "Email Address",
+    "passwordLabel": "Password",
+    "fundCodeLabel": "Fund Code",
+    "fundCodeHelp": "Enter the code provided by your employer or program.",
+    "signUpButton": "Sign Up",
+    "hasAccount": "Already have an account?",
+    "signInLink": "Sign In",
+    "errorAllFields": "All fields are required.",
+    "errorGeneric": "Registration failed. Please try again."
+  },
+  "homePage": {
+    "title": "Home",
+    "poweredBy": "Powered by E4E Relief",
+    "applyTooltipVerification": "Class Verification required to access applications.",
+    "applyTooltipLimits": "Your grant limits have been reached."
+  },
+  "aiApplyPage": {
+    "title": "AI Apply",
+    "backToHome": "Back to Home",
+    "greeting": "Hello! Review the application questions and let me know about your situation. We are here to help!",
+    "progressTitle": "Application Progress",
+    "additionalDetailsPreviewTitle": "Additional Details",
+    "profileAcknowledgementsPreviewTitle": "Profile Acknowledgements",
+    "eventDetailsPreviewTitle": "Event Details",
+    "expensesPreviewTitle": "Expenses",
+    "agreementsPreviewTitle": "Agreements & Submission",
+    "previewSubtitle": "This list updates as you answer the assistant.",
+    "eligibilityNotice": "You are not currently eligible to apply. Please visit your Profile page to check your verification status and grant limits.",
+    "statusAnalyzing": "Analyzing...",
+    "statusUpdating": "Updating Application...",
+    "statusFinalizing": "Finalizing Response..."
+  },
+  "applyPage": {
+    "title": "Apply for Relief",
+    "eligibility": "Eligible to apply for relief",
+    "verificationNeeded": "Verification needed",
+    "noActiveFund": "No active fund selected.",
+    "limitsReachedTitle": "Grant Limits Reached",
+    "limitsReachedBody": "You are not eligible to apply at this time because your 12-month or lifetime grant limits have been reached.",
+    "limitsReachedCta": "Please check your {{profileLink}} for more details.",
+    "profileLink": "Profile"
+  },
+  "applyContactPage": {
+    "getStartedTitle": "Let's Get Started",
+    "contactInfoTitle": "Contact Information",
+    "addresses": "Addresses",
+    "primaryAddressTitle": "Primary Address",
+    "mailingAddressTitle": "Mailing Address",
+    "additionalDetailsTitle": "Additional Details",
+    "consentTitle": "Consent & Acknowledgement",
+    "collapse": "Collapse",
+    "firstName": "First Name",
+    "middleName": "Middle Name(s)",
+    "lastName": "Last Name",
+    "suffix": "Suffix",
+    "email": "Email",
+    "mobileNumber": "Mobile Number",
+    "mobileNumberPlaceholder": "(555) 555-5555",
+    "mailingAddressSame": "Mailing Address Same as Primary?",
+    "employmentStartDate": "Employment Start Date",
+    "eligibilityType": "Eligibility Type",
+    "householdIncome": "Estimated Annual Household Income",
+    "householdSize": "Number of people in household",
+    "homeowner": "Do you own your own home?",
+    "preferredLanguage": "Preferred Language",
+    "ackPolicies": "I have read and agree to E4E Relief’s Privacy Policy and Cookie Policy.",
+    "commConsent": "I consent to receive emails and text messages regarding my application.",
+    "infoCorrect": "All information I have provided is accurate.",
+    "errorCorrection": "Please correct the highlighted errors to continue."
+  },
+  "applyEventPage": {
+    "title": "Event Details",
+    "disasterLabel": "Select the disaster experienced",
+    "otherDisasterLabel": "Choose the disaster that affected you",
+    "eventDateLabel": "What was the date of your event?",
+    "powerLossLabel": "Did this event cause you to lose power at your primary residence for more than 4 hours?",
+    "powerLossDaysLabel": "How many day(s) were you without power?",
+    "evacuatedLabel": "Have you evacuated, or are you planning to evacuate?",
+    "evacuatingFromPrimaryLabel": "Are you evacuating from your primary residence?",
+    "evacuationReasonLabel": "Select why evacuation is required from the Alternate Evacuation Address",
+    "stayedWithFamilyLabel": "Did you stay, or do you plan to stay with a family member or friend?",
+    "evacuationStartDateLabel": "When did you start or when do you plan to start your evacuation?",
+    "evacuationNightsLabel": "How many nights were you evacuated, or plan to evacuate?",
+    "additionalDetailsLabel": "Provide additional details that support your relief request and expense needs",
+    "additionalDetailsPlaceholder": "Describe any other relevant information here...",
+    "requestedAmountLabel": "Requested Relief Payment ($)",
+    "requestedAmountPlaceholder": "0.00",
+    "errorEvent": "Please select the disaster you experienced.",
+    "errorOtherEvent": "Please specify the disaster.",
+    "errorEventDate": "Please enter the date of the event.",
+    "errorEvacuated": "Please answer if you have evacuated.",
+    "errorEvacuatingFromPrimary": "Please answer if you are evacuating from your primary residence.",
+    "errorStayedWithFamily": "Please answer if you stayed with family or a friend.",
+    "errorEvacuationStartDate": "Please enter your evacuation start date.",
+    "errorEvacuationNights": "Please enter a valid number of nights.",
+    "errorPowerLoss": "Please answer if you lost power.",
+    "errorPowerLossDays": "Please enter a valid number of days.",
+    "errorRequestedAmount": "Requested amount must be greater than zero.",
+    "errorEventName": "Please select the storm name.",
+    "errorEvacuationReason": "Please provide a reason for evacuating."
+  },
+  "applyExpensesPage": {
+    "title": "Expenses",
+    "description": "Add amounts and receipts for any applicable categories below. A receipt is not required for any expense.",
+    "amountLabel": "Amount (USD)",
+    "receiptLabel": "Receipt",
+    "uploadButton": "Upload",
+    "uploadingButton": "Uploading...",
+    "noFileChosen": "No file chosen",
+    "removeReceipt": "Remove receipt",
+    "uploadFailedError": "Upload failed. Please try again.",
+    "uploadFailedUnauthorized": "Permission denied. Please check your Firebase Storage security rules.",
+    "uploadFailedGeneric": "Upload failed: {{message}}",
+    "totalExpensesLabel": "Total Expenses",
+    "errorAmount": "Amount must be greater than zero.",
+    "expenseTypes": {
+      "BasicDisasterSupplies": "Basic Disaster Supplies",
+      "FoodSpoilage": "Food Spoilage",
+      "Meals": "Meals"
+    }
+  },
+  "applyTermsPage": {
+    "title": "Agreements & Submission",
+    "shareStoryTitle": "Share Your Story",
+    "shareStoryQuestion": "Would you be willing to share your story with your employer?",
+    "shareStoryDisclaimer": "*If yes, we will share your name and email address and your employer may contact you for additional information.",
+    "additionalInfoQuestion": "Are you interested in receiving additional information on assistance beyond financial support?",
+    "termsTitle": "Terms of Acceptance",
+    "termsCheckboxLabel": "I acknowledge and agree that checking this box serves as my electronic signature and confirms that I have read, understand, and agree to the",
+    "termsLink": "Terms of Acceptance",
+    "termsViewNotice": "Please view the terms before agreeing.",
+    "submitButton": "Submit Application",
+    "submittingButton": "Submitting...",
+    "errorShareStory": "Please indicate if you are willing to share your story.",
+    "errorAdditionalInfo": "Please indicate if you are interested in receiving additional information.",
+    "errorTermsAgreed": "You must agree to the Terms of Acceptance to submit your application."
+  },
+  "submissionSuccessPage": {
+    "title": "Submission Successful!",
+    "body1": "Your application for relief has been received.",
+    "appIdLabel": "Your Application ID is:",
+    "body2": "You can track the status of your application in the \"My Applications\" section of your profile page.",
+    "goToProfileButton": "Go to My Profile"
+  },
+  "profilePage": {
+    "title": "Profile",
+    "myApplicationsTitle": "My Applications",
+    "twelveMonthRemaining": "12-Month Remaining",
+    "lifetimeRemaining": "Lifetime Remaining",
+    "submitted": "Submitted",
+    "status": "Status",
+    "seeAllApplications": "See All Applications",
+    "applyNow": "Apply Now",
+    "noApplications": "You have not submitted any applications for this fund yet.",
+    "fundIdentitiesTitle": "Fund Identities",
+    "fundIdentitiesDescription": "Manage your fund identities. Add or remove additional fund codes if you’re eligible for more than one program.",
+    "active": "Active",
+    "setActive": "Set Active",
+    "addNewIdentity": "+ Add New Identity",
+    "enterNewFundCode": "Enter New Fund Code",
+    "seeAll": "See All",
+    "showLess": "Show Less",
+    "contactInfoTitle": "Contact Information",
+    "firstName": "First Name",
+    "middleName": "Middle Name(s)",
+    "lastName": "Last Name",
+    "suffix": "Suffix",
+    "email": "Email",
+    "mobileNumber": "Mobile Number",
+    "collapse": "Collapse",
+    "addresses": "Addresses",
+    "primaryAddressTitle": "Primary Address",
+    "mailingAddressTitle": "Mailing Address",
+    "mailingAddressSame": "Mailing Address Same as Primary?",
+    "additionalDetailsTitle": "Additional Details",
+    "employmentStartDate": "Employment Start Date",
+    "eligibilityType": "Eligibility Type",
+    "householdIncome": "Estimated Annual Household Income",
+    "householdSize": "Number of people in household",
+    "homeowner": "Do you own your own home?",
+    "preferredLanguage": "Preferred Language",
+    "consentTitle": "Consent & Acknowledgement",
+    "ackPolicies": "I have read and agree to E4E Relief’s Privacy Policy and Cookie Policy.",
+    "commConsent": "I consent to receive emails and text messages regarding my application.",
+    "infoCorrect": "All information I have provided is accurate.",
+    "errorCorrection": "Please correct the highlighted errors before saving.",
+    "saveButton": "Save Changes",
+    "removeIdentityConfirm": "Are you sure you want to remove the identity for {{fundName}}?",
+    "cannotRemoveActive": "You cannot remove your active identity.",
+    "viewMailingAddress": "View Mailing Address",
+    "viewPrimaryAddress": "View Primary Address"
+  },
+  "myApplicationsPage": {
+    "title": "My Applications",
+    "searchPlaceholder": "Search by event, status, date...",
+    "noResults": "No applications match your search.",
+    "noApplications": "You have not submitted any applications for this fund yet."
+  },
+  "myProxyApplicationsPage": {
+    "title": "My Proxy Applications",
+    "searchPlaceholder": "Search by applicant, event, status...",
+    "noResults": "No proxy applications match your search.",
+    "noApplications": "You have not submitted any proxy applications for this fund yet."
+  },
+  "supportPage": {
+    "title": "Support Center",
+    "emailLabel": "Support Email",
+    "phoneLabel": "Support Phone",
+    "chatbotButton": "Talk to Relief Application Assistant",
+    "chatbotDisclaimer": "Relief Application Assistant uses AI. Call or email us with any additional questions.",
+    "faqTitle": "FAQs",
+    "faqDescription": "Find answers to common questions.",
+    "paymentsTitle": "Payments",
+    "paymentsDescription": "Learn how grants are disbursed."
+  },
+  "classVerificationPage": {
+    "maxAttemptsTitle": "The details provided do not match our records.",
+    "maxAttemptsBody": "Too many failed attempts. Please contact support if you believe this is an error.",
+    "backToProfile": "Back to Profile",
+    "backToHome": "Back to Home",
+    "domainTitle": "Verifying with Company Email Domain",
+    "domainBody": "We are checking if your email <1>{{email}}</1> belongs to an approved domain for fund code <1>{{fundCode}}</1>.",
+    "domainErrorConfig": "No domain configuration found for this fund.",
+    "domainErrorMismatch": "Your email domain ({{userDomain}}) is not eligible for this fund.",
+    "domainErrorGeneric": "Could not verify domain.",
+    "domainSuccess": "Domain verified! Redirecting...",
+    "rosterTitle": "Verify Your Status",
+    "rosterBody": "Please enter the following details to verify your status. Attempts remaining: {{attempts}}",
+    "employeeIdLabel": "Employee ID",
+    "birthMonthLabel": "Birth Month (1-12)",
+    "birthDayLabel": "Birth Day (1-31)",
+    "rosterErrorMismatch": "The details provided do not match our records. Please try again.",
+    "rosterErrorGeneric": "An error occurred during verification. Please try again later.",
+    "ssoTitle": "Verifying with SSO",
+    "ssoBody": "Click the button below to link your company's SSO account to complete verification. This will open a new window.",
+    "ssoButton": "Link SSO Account",
+    "ssoErrorFailed": "SSO linking failed. Please try again or use another method.",
+    "ssoErrorGeneric": "An error occurred. Please try again.",
+    "successTitle": "Verification Complete!",
+    "successBody": "You are now eligible to apply for relief for this fund.",
+    "configError": "Configuration error: The fund code \"{{fundCode}}\" is not recognized."
+  },
+  "eligibilityPage": {
+    "title": "Eligible for Assistance?",
+    "description": "Your program covers the eligibility types and events below - confirm you're eligible before applying. You can check your current eligibility status on your <1>Profile page</1>.",
+    "statusActive": "<1>'Active'</1> means you are eligible to apply.",
+    "statusInactive": "<1>'Inactive'</1> requires verification.",
+    "header": "Eligible",
+    "eligibilityType": "Eligibility Type",
+    "disasters": "Disasters",
+    "hardships": "Hardships",
+    "errorLoading": "Could not load eligibility information for your fund ({{fundCode}}).",
+    "errorFetching": "An error occurred while fetching fund details."
+  },
+  "donatePage": {
+    "title": "Donate",
+    "chooseAmount": "Choose an Amount",
+    "description": "Your generous contribution helps us provide critical financial assistance to employees affected by unforeseen disasters.",
+    "customAmount": "Custom",
+    "donorInfo": "Donor Information",
+    "paymentInfo": "Payment Information",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "cardholderName": "Name on Card",
+    "cardNumber": "Card Number",
+    "expiryDate": "Expiry Date",
+    "cvc": "CVC",
+    "donateButton": "Donate ${{amount}}",
+    "processing": "Processing...",
+    "successTitle": "Thank You!",
+    "successBody": "Your generous donation of ${{amount}} will make a difference. A receipt has been sent to your email.",
+    "backToSupport": "Back to Support Center",
+    "errorAmount": "Please enter a valid amount.",
+    "errorFirstName": "First name is required.",
+    "errorLastName": "Last name is required.",
+    "errorEmail": "Please enter a valid email.",
+    "errorCardholderName": "Cardholder name is required.",
+    "errorCardNumber": "Please enter a valid card number.",
+    "errorExpiryFormat": "Invalid format (MM / YY).",
+    "errorExpiryDate": "Card has expired.",
+    "errorCvc": "CVC must be 3 or 4 digits."
+  },
+  "chatbotWidget": {
+    "greeting": "Hello! I'm the Relief Application Assistant. How can I help you today? Feel free to tell me about your situation.",
+    "title": "Relief Application Assistant",
+    "disclaimer": "AI-generated content may be inaccurate. By using this feature, you agree to our <1>AI Terms</1> and <2>Privacy Policy</2>.",
+    "errorMessage": "Sorry, I encountered an error. Please try again.",
+    "placeholder": "Type your message..."
+  },
+  "modals": {
+    "applicationDetail": {
+      "title": "Application Details",
+      "id": "Application ID:",
+      "submittedBy": "Submitted By:",
+      "status": "Status:",
+      "submittedDate": "Submitted Date:",
+      "decisionedDate": "Decisioned Date:",
+      "eventType": "Event Type:",
+      "requestedAmount": "Requested Amount:",
+      "reasons": "Decision Reasons:",
+      "expensesTitle": "Expenses",
+      "decisionNotes": "Decision Notes"
+    },
+    "terms": {
+      "title": "Terms of Acceptance",
+      "body": [
+        "By submitting this application, I certify that the information provided is true, correct, and complete to the best of my knowledge. I understand that any false statements, misrepresentations, or omissions may lead to the denial of my application or other disciplinary action, up to and including termination of employment, where applicable.",
+        "I authorize E4E Relief and its agents to verify the information provided in this application. I understand that this assistance is intended to provide temporary relief for qualified disaster events and may not cover all of my expenses.",
+        "I agree to release and hold harmless E4E Relief, my employer, and their respective officers, directors, employees, and agents from any and all claims, liabilities, or causes of action arising out of or related to this application and any assistance provided.",
+        "I understand that the funds are granted based on the information provided and are subject to availability. Receiving an award does not guarantee future assistance. All decisions made by E4E Relief are final."
+      ],
+      "closeButton": "I Have Read and Understood"
+    },
+    "policy": {
+      "title": "Legal Information",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use",
+      "cookies": "Cookie Policy",
+      "ai": "AI Policy"
+    }
+  },
+  "formControls": {
+    "location": "Location",
+    "noCountriesFound": "No countries found",
+    "noOptionsFound": "No options found",
+    "requiredField": "This field is required",
+    "addressHelper": "Type or paste a full address below and let our AI fill in the fields for you.",
+    "addressHelperPlaceholder": "e.g., 1600 Amphitheatre Parkway, Mountain View, CA 94043",
+    "aiStarter": "Describe your situation below and our AI relief Assistant will pre-fill your application.",
+    "aiStarterPlaceholder": "e.g., I'm a homeowner affected by the recent tornado in Anytown, CA. My home was damaged and I need about $2500 for repairs. Our household of 4 makes about $60k/year. My phone is 555-123-4567 and I prefer to communicate in Spanish.",
+    "submitDescription": "Submit Description",
+    "aiParseError": "Could not extract details. Please try again or fill fields manually.",
+    "aiSuccess": "Success! We've pre-filled the form with any details we found.",
+    "aiDisclaimer": "AI-generated content may be inaccurate. By using this feature, you agree to our <1>AI Terms</1> and <2>Privacy Policy</2>.",
+    "street1": "Street 1",
+    "street2": "Street 2",
+    "city": "City",
+    "state": "State / Province",
+    "zip": "ZIP / Postal",
+    "letAIFill": "Let AI fill in the fields for you"
+  },
+  "validation": {
+    "required": "Please fill out this field.",
+    "firstNameRequired": "First name is required.",
+    "lastNameRequired": "Last name is required.",
+    "mobileNumberRequired": "Mobile number is required.",
+    "mobileNumberInvalid": "Please enter a valid phone number (at least 7 digits).",
+    "countryRequired": "Country is required.",
+    "street1Required": "Street 1 is required.",
+    "cityRequired": "City is required.",
+    "stateRequired": "State is required.",
+    "zipRequired": "ZIP code is required.",
+    "employmentStartDateRequired": "Employment start date is required.",
+    "eligibilityTypeRequired": "Eligibility type is required.",
+    "householdIncomeRequired": "Household income is required.",
+    "householdSizeRequired": "Household size is required.",
+    "homeownerRequired": "Homeowner status is required.",
+    "mailingAddressSameRequired": "Please select an option for the mailing address.",
+    "ackPoliciesRequired": "You must agree to the policies.",
+    "commConsentRequired": "You must consent to communications.",
+    "infoCorrectRequired": "You must confirm your information is correct.",
+    "applicantFirstNameRequired": "Applicant's first name is required.",
+    "applicantLastNameRequired": "Applicant's last name is required.",
+    "applicantEmailRequired": "A valid applicant email is required."
+  },
+  "faqPage": {
+    "title": "Frequently Asked Questions",
+    "backToSupport": "Back to Support",
+    "applicantTitle": "For Applicants",
+    "donorTitle": "For Donors",
+    "applicantFaqs": [
+      {
+        "question": "How do I start a new application?",
+        "answer": "You can start a new application from the Home screen by tapping either 'Apply' for the standard form, or 'AI Apply' for a conversational experience. Both options are disabled if you are not eligible or have reached your grant limits."
+      },
+      {
+        "question": "What is the difference between 'Apply' and 'AI Apply'?",
+        "answer": [
+          "#### Apply",
+          "The standard application is a multi-step form that you fill out manually. It is ideal if you prefer a traditional form-filling experience.",
+          "",
+          "#### AI Apply",
+          "AI Apply is a conversational experience where an AI assistant asks you questions one-by-one to complete your application. It is ideal if you prefer a more guided, interactive process."
+        ]
+      },
+      {
+        "question": "How do I know if I'm eligible to apply?",
+        "answer": "Your eligibility status is shown on your Profile page and in the header. If your status is 'Eligible', you can apply. If it shows 'Verification Needed', you must complete the verification process first. You can start this from the 'Fund Identities' section of your Profile."
+      },
+      {
+        "question": "Where can I see my grant limits?",
+        "answer": "Your remaining 12-month and lifetime grant balances are displayed at the top of the 'My Applications' section on your Profile page."
+      },
+      {
+        "question": "I failed verification, what do I do now?",
+        "answer": "If you fail verification after the maximum number of attempts, you will be placed in the Relief Queue. From there, you can contact support or correct your name and re-attempt verification with the correct fund code."
+      },
+      {
+        "question": "How will I receive my grant payment?",
+        "answer": "Grant payments are disbursed through our payment partners. You can find detailed guides for both U.S. and international payment options on the 'Payments' page, accessible from the Support Center."
+      }
+    ],
+    "donorFaqs": [
+      {
+        "question": "Is my donation tax-deductible?",
+        "answer": "Yes, E4E Relief is a 501(c)(3) charitable organization. Your donation is tax-deductible to the extent allowed by law. You will receive an email receipt for your contribution."
+      },
+      {
+        "question": "How does E4E Relief use my donation?",
+        "answer": "100% of your donation goes directly to funding grants for employees in need. Your contribution provides critical financial assistance to individuals affected by unforeseen disasters and hardships."
+      },
+      {
+        "question": "Can I donate to a specific fund or employee?",
+        "answer": "To ensure fairness and privacy, all donations go into a general relief fund that supports employees across all our partner programs. We cannot direct donations to specific individuals or funds."
+      },
+      {
+        "question": "What other ways can I give?",
+        "answer": "For information about other ways to give, such as planned giving or corporate partnerships, please contact E4E Relief Donor Services at (704) 973-4564 or <1>donorservices@e4erelief.org</1>."
+      }
+    ]
+  },
+  "paymentOptionsPage": {
+    "title": "Payment Options",
+    "description": "Grants are disbursed through our payment partners. Below you will find information for both U.S. and International applicants.",
+    "usApplicantsTitle": "For U.S. Applicants",
+    "usApplicantsBody": "U.S. grant payments are made through Bank of America Recipient Select. You will receive an email from Bank of America with instructions on how to choose your payment method (Zelle, ACH, or check).",
+    "usApplicantsLink": "Learn More at Bank of America",
+    "intlApplicantsTitle": "For International Applicants",
+    "intlSupportTitle": "Payment Support",
+    "intlSupportBody": "For support with international payments, please contact <a href=\"mailto:support@e4erelief.example\" class=\"font-semibold text-white hover:underline\">support@e4erelief.example</a>.",
+    "intlPartnersTitle": "Payment Partner Guides",
+    "converaGuide": "Convera Guide",
+    "tipaltiGuide": "Tipalti Guide"
+  }
+}

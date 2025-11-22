@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover" />
+    <title>Gemini Chat Bot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --theme-bg-primary: #003a70;
+        --theme-bg-secondary: #004b8d;
+        --theme-border: #005ca0;
+        --theme-accent: #ff8400;
+        --theme-accent-hover: #e67700;
+        --theme-gradient-start: #ff8400;
+        --theme-gradient-end: #edda26;
+      }
+
+      html {
+        /* Prevents automatic text size adjustment on mobile browsers (like Safari on iOS), ensuring consistent layout. */
+        -webkit-text-size-adjust: 100%;
+      }
+      
+      /* Hide native password reveal button in Edge/IE to prevent duplicate icons with custom toggle */
+      input::-ms-reveal,
+      input::-ms-clear {
+        display: none;
+      }
+
+      /* Styles for the 3D flip card animation */
+      .flip-container {
+        perspective: 1000px;
+      }
+      .flipper {
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.6s ease-in-out;
+      }
+      .flipper.is-flipped {
+        transform: rotateY(180deg);
+      }
+      .flip-front,
+      .flip-back {
+        width: 100%;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+      }
+      .flip-back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotateY(180deg);
+      }
+      /* Respect user preference for reduced motion */
+      @media (prefers-reduced-motion: reduce) {
+        .flipper {
+          transition: none;
+        }
+      }
+      /* Custom scrollbar styles */
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 8px; /* Width for vertical scrollbars */
+        height: 8px; /* Height for horizontal scrollbars */
+      }
+
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.2); /* A dark, semi-transparent track that blends in */
+        border-radius: 10px;
+      }
+
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.25); /* The draggable 'glass' handle */
+        border-radius: 10px; /* Round corners */
+        border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for a glassy edge */
+      }
+
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(255, 255, 255, 0.4); /* More opaque on hover for better visibility */
+      }
+    </style>
+  <!-- 
+    The import map allows using bare module specifiers (e.g., "react") in the browser,
+    similar to how they are used in a Node.js environment. It maps these specifiers
+    to full URLs, enabling a modern, build-less development workflow where modules
+    are loaded directly from a CDN.
+  -->
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.25.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0",
+    "firebase/app": "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js",
+    "firebase/auth": "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js",
+    "firebase/firestore": "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js",
+    "firebase/storage": "https://www.gstatic.com/firebasejs/10.12.2/firebase-storage.js",
+    "firebase/": "https://aistudiocdn.com/firebase@^12.5.0/",
+    "i18next": "https://aistudiocdn.com/i18next@^23.11.5",
+    "react-i18next": "https://aistudiocdn.com/react-i18next@^14.1.2",
+    "i18next-browser-languagedetector": "https://aistudiocdn.com/i18next-browser-languagedetector@^8.0.0",
+    "i18next-http-backend": "https://aistudiocdn.com/i18next-http-backend@^2.5.2"
+  }
+}
+</script>
+</head>
+  <body class="bg-[#003a70]" style="background-color: var(--theme-bg-primary);">
+    <div id="root"></div>
+    <!-- A dedicated root for modals is a best practice to handle z-index and stacking contexts correctly. -->
+    <div id="modal-root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

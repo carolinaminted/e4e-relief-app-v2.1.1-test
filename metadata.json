@@ -1,0 +1,5 @@
+{
+  "name": "E4E Relief App v2.1.1 TEST",
+  "description": "A sleek and responsive chat application powered by the Gemini API. Users can ask questions and receive real-time responses from the gemini-2.5-flash model in a conversational interface.",
+  "requestFramePermissions": []
+}

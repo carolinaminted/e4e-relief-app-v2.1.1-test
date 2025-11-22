@@ -1,0 +1,515 @@
+
+{
+  "common": {
+    "next": "次へ",
+    "back": "戻る",
+    "submit": "送信",
+    "save": "変更を保存",
+    "cancel": "キャンセル",
+    "verify": "確認",
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "success": "成功",
+    "yes": "はい",
+    "no": "いいえ",
+    "unknownError": "不明なエラーが発生しました。",
+    "aiApplyingDetails": "詳細を申請書に適用しています。",
+    "close": "閉じる",
+    "eligible": "対象",
+    "ineligible": "対象外",
+    "collapse": "折りたたむ"
+  },
+  "applicationStatus": {
+    "Submitted": "送信済み",
+    "Awarded": "承認済み",
+    "Declined": "却下"
+  },
+  "sessionTimeout": {
+    "title": "セッションの有効期限が近づいています",
+    "body": "セキュリティのため、セッションはまもなくタイムアウトします。残り時間：",
+    "logoutButton": "今すぐログアウト",
+    "extendButton": "セッションを延長"
+  },
+  "reliefQueue": {
+    "helpRoster": "あなたの会社はE4E Reliefに対象従業員の名簿を提供しています。資格基準が雇用主の人事システムと正確に一致していることを確認してください。",
+    "helpDomain": "あなたの雇用主は、このアプリケーションに登録するために電子メールのドメイン許可リストを強制しています。会社から提供された電子メールアドレスで新しいアカウントを登録してください。",
+    "helpSSO": "あなたの雇用主はSSOをサポートしています。雇用主との認証に成功した後に救援キューに到達した場合は、<phoneLink>{{phone}}</phoneLink> または <emailLink>{{email}}</emailLink> までご連絡ください。"
+  },
+  "eligibilityIndicator": {
+    "eligibleMessage": "あなたはこの救援基金プログラムの対象として確認されています。救援を申請しても、支払いが保証されるわけではありません。",
+    "verificationNeededMessage": "救援の対象となる資格を確認するには、プロフィールページの「基金ID」にアクセスしてください。"
+  },
+  "app": {
+    "loading": "読み込み中...",
+    "authenticating": "認証中...",
+    "loadingProfile": "プロフィールを読み込み中..."
+  },
+  "nav": {
+    "home": "ホーム",
+    "profile": "プロフィール",
+    "apply": "申請",
+    "aiApply": "AI申請",
+    "support": "サポート",
+    "donate": "寄付",
+    "fundPortal": "基金ポータル",
+    "logout": "ログアウト",
+    "welcome": "ようこそ、{{name}}"
+  },
+  "loginPage": {
+    "emailLabel": "メールアドレス",
+    "passwordLabel": "パスワード",
+    "signInButton": "サインイン",
+    "noAccount": "アカウントをお持ちでないですか？",
+    "signUpLink": "サインアップ",
+    "errorGeneric": "メールアドレスとパスワードを入力してください。",
+    "errorInvalid": "メールアドレスまたはパスワードが無効です。もう一度お試しください。",
+    "forgotPasswordLink": "パスワードをお忘れですか？"
+  },
+  "forgotPasswordPage": {
+    "title": "パスワードのリセット",
+    "instruction": "メールアドレスを入力してください。パスワードをリセットするためのリンクをお送りします。",
+    "sendButton": "リセットリンクを送信",
+    "backToLogin": "サインインに戻る",
+    "successMessage": "そのメールアドレスのアカウントが存在する場合、パスワードリセットリンクが送信されました。受信トレイを確認してください。",
+    "errorGeneric": "予期しないエラーが発生しました。もう一度お試しください。",
+    "errorEmailRequired": "有効なメールアドレスを入力してください。"
+  },
+  "registerPage": {
+    "firstNameLabel": "名",
+    "lastNameLabel": "姓",
+    "emailLabel": "メールアドレス",
+    "passwordLabel": "パスワード",
+    "fundCodeLabel": "基金コード",
+    "fundCodeHelp": "雇用主またはプログラムから提供されたコードを入力してください。",
+    "signUpButton": "サインアップ",
+    "hasAccount": "すでにアカウントをお持ちですか？",
+    "signInLink": "サインイン",
+    "errorAllFields": "すべてのフィールドが必須です。",
+    "errorGeneric": "登録に失敗しました。もう一度お試しください。"
+  },
+  "homePage": {
+    "title": "ホーム",
+    "poweredBy": "Powered by E4E Relief",
+    "applyTooltipVerification": "申請にアクセスするにはクラス確認が必要です。",
+    "applyTooltipLimits": "助成金の上限に達しました。"
+  },
+  "aiApplyPage": {
+    "title": "AI申請",
+    "backToHome": "ホームに戻る",
+    "greeting": "こんにちは！申請の質問を確認し、あなたの状況について教えてください。私たちがサポートします！",
+    "progressTitle": "申請の進捗状況",
+    "additionalDetailsPreviewTitle": "追加詳細",
+    "profileAcknowledgementsPreviewTitle": "プロフィールの確認",
+    "eventDetailsPreviewTitle": "イベント詳細",
+    "expensesPreviewTitle": "経費",
+    "agreementsPreviewTitle": "合意と送信",
+    "previewSubtitle": "このリストはアシスタントに答えると更新されます。",
+    "eligibilityNotice": "現在、申請の対象ではありません。確認ステータスと助成金の上限を確認するには、プロフィールページをご覧ください。",
+    "statusAnalyzing": "分析中...",
+    "statusUpdating": "申請を更新中...",
+    "statusFinalizing": "回答を仕上げています..."
+  },
+  "applyPage": {
+    "title": "救援を申請",
+    "eligibility": "救援申請の対象",
+    "verificationNeeded": "確認が必要",
+    "noActiveFund": "アクティブな基金が選択されていません。",
+    "limitsReachedTitle": "助成金の上限に達しました",
+    "limitsReachedBody": "12か月または生涯の助成金上限に達しているため、現時点では申請の対象ではありません。",
+    "limitsReachedCta": "詳細については{{profileLink}}をご確認ください。",
+    "profileLink": "プロフィール"
+  },
+  "applyContactPage": {
+    "getStartedTitle": "始めましょう",
+    "contactInfoTitle": "連絡先情報",
+    "addresses": "住所",
+    "primaryAddressTitle": "現住所",
+    "mailingAddressTitle": "郵送先住所",
+    "additionalDetailsTitle": "追加詳細",
+    "consentTitle": "同意と確認",
+    "collapse": "折りたたむ",
+    "firstName": "名",
+    "middleName": "ミドルネーム",
+    "lastName": "姓",
+    "suffix": "接尾辞",
+    "email": "メール",
+    "mobileNumber": "携帯電話番号",
+    "mobileNumberPlaceholder": "(555) 555-5555",
+    "mailingAddressSame": "郵送先住所は現住所と同じですか？",
+    "employmentStartDate": "雇用開始日",
+    "eligibilityType": "資格タイプ",
+    "householdIncome": "推定世帯年収",
+    "householdSize": "世帯人数",
+    "homeowner": "持ち家ですか？",
+    "preferredLanguage": "希望言語",
+    "ackPolicies": "E4E Reliefのプライバシーポリシーとクッキーポリシーを読み、同意します。",
+    "commConsent": "申請に関するメールとテキストメッセージを受け取ることに同意します。",
+    "infoCorrect": "提供したすべての情報は正確です。",
+    "errorCorrection": "続行するには、強調表示されたエラーを修正してください。"
+  },
+  "applyEventPage": {
+    "title": "イベント詳細",
+    "disasterLabel": "経験した災害を選択",
+    "otherDisasterLabel": "影響を受けた災害を選択",
+    "eventDateLabel": "イベントの日付はいつですか？",
+    "powerLossLabel": "このイベントにより、現住所で4時間以上の停電が発生しましたか？",
+    "powerLossDaysLabel": "何日間停電しましたか？",
+    "evacuatedLabel": "避難しましたか、または避難する予定ですか？",
+    "evacuatingFromPrimaryLabel": "現住所から避難していますか？",
+    "evacuationReasonLabel": "代替避難先からの避難が必要な理由を選択してください",
+    "stayedWithFamilyLabel": "家族や友人の家に滞在しましたか、または滞在する予定ですか？",
+    "evacuationStartDateLabel": "いつ避難を開始しましたか、または開始する予定ですか？",
+    "evacuationNightsLabel": "何泊避難しましたか、または避難する予定ですか？",
+    "additionalDetailsLabel": "救援要請と必要経費を裏付ける追加の詳細を提供してください",
+    "additionalDetailsPlaceholder": "その他に関連する情報をここに記述してください...",
+    "requestedAmountLabel": "申請する救援金額 ($)",
+    "requestedAmountPlaceholder": "0.00",
+    "errorEvent": "経験した災害を選択してください。",
+    "errorOtherEvent": "災害を指定してください。",
+    "errorEventDate": "イベントの日付を入力してください。",
+    "errorEvacuated": "避難したかどうか回答してください。",
+    "errorEvacuatingFromPrimary": "現住所から避難しているかどうか回答してください。",
+    "errorStayedWithFamily": "家族や友人と滞在したかどうか回答してください。",
+    "errorEvacuationStartDate": "避難開始日を入力してください。",
+    "errorEvacuationNights": "有効な宿泊数を入力してください。",
+    "errorPowerLoss": "停電したかどうか回答してください。",
+    "errorPowerLossDays": "有効な日数を入力してください。",
+    "errorRequestedAmount": "申請金額はゼロより大きくなければなりません。",
+    "errorEventName": "嵐の名前を選択してください。",
+    "errorEvacuationReason": "避難の理由を提供してください。"
+  },
+  "applyExpensesPage": {
+    "title": "経費",
+    "description": "以下の該当するカテゴリに金額と領収書を追加してください。領収書は必須ではありません。",
+    "amountLabel": "金額 (USD)",
+    "receiptLabel": "領収書",
+    "uploadButton": "アップロード",
+    "uploadingButton": "アップロード中...",
+    "noFileChosen": "ファイルが選択されていません",
+    "removeReceipt": "領収書を削除",
+    "uploadFailedError": "アップロードに失敗しました。もう一度お試しください。",
+    "uploadFailedUnauthorized": "許可が拒否されました。Firebase Storageのセキュリティルールを確認してください。",
+    "uploadFailedGeneric": "アップロード失敗: {{message}}",
+    "totalExpensesLabel": "経費合計",
+    "errorAmount": "金額はゼロより大きくなければなりません。",
+    "expenseTypes": {
+      "BasicDisasterSupplies": "基本的な災害用品",
+      "FoodSpoilage": "食品の腐敗",
+      "Meals": "食事"
+    }
+  },
+  "applyTermsPage": {
+    "title": "合意と送信",
+    "shareStoryTitle": "ストーリーの共有",
+    "shareStoryQuestion": "あなたのストーリーを雇用主と共有することに同意しますか？",
+    "shareStoryDisclaimer": "*「はい」の場合、あなたの名前とメールアドレスを共有し、雇用主から追加情報の連絡がある場合があります。",
+    "additionalInfoQuestion": "経済的支援以外の支援に関する追加情報を受け取ることに興味がありますか？",
+    "termsTitle": "承諾条件",
+    "termsCheckboxLabel": "このボックスにチェックを入れることで、これが私の電子署名として機能し、以下の内容を読み、理解し、同意したことを確認します：",
+    "termsLink": "承諾条件",
+    "termsViewNotice": "同意する前に条件を確認してください。",
+    "submitButton": "申請を送信",
+    "submittingButton": "送信中...",
+    "errorShareStory": "ストーリーを共有する意思があるかどうかを示してください。",
+    "errorAdditionalInfo": "追加情報の受け取りに興味があるかどうかを示してください。",
+    "errorTermsAgreed": "申請を送信するには、承諾条件に同意する必要があります。"
+  },
+  "submissionSuccessPage": {
+    "title": "送信成功！",
+    "body1": "救援申請を受け付けました。",
+    "appIdLabel": "あなたの申請ID:",
+    "body2": "プロフィールページの「私の申請」セクションで申請の状況を確認できます。",
+    "goToProfileButton": "プロフィールへ移動"
+  },
+  "profilePage": {
+    "title": "プロフィール",
+    "myApplicationsTitle": "私の申請",
+    "twelveMonthRemaining": "12ヶ月の残り",
+    "lifetimeRemaining": "生涯の残り",
+    "submitted": "送信済み",
+    "status": "ステータス",
+    "seeAllApplications": "すべての申請を見る",
+    "applyNow": "今すぐ申請",
+    "noApplications": "この基金に対する申請はまだありません。",
+    "fundIdentitiesTitle": "基金ID",
+    "fundIdentitiesDescription": "基金IDを管理します。複数のプログラムの対象となる場合は、追加の基金コードを追加または削除してください。",
+    "active": "アクティブ",
+    "setActive": "アクティブに設定",
+    "addNewIdentity": "+ 新しいIDを追加",
+    "enterNewFundCode": "新しい基金コードを入力",
+    "seeAll": "すべて見る",
+    "showLess": "表示を減らす",
+    "contactInfoTitle": "連絡先情報",
+    "firstName": "名",
+    "middleName": "ミドルネーム",
+    "lastName": "姓",
+    "suffix": "接尾辞",
+    "email": "メール",
+    "mobileNumber": "携帯電話番号",
+    "collapse": "折りたたむ",
+    "addresses": "住所",
+    "primaryAddressTitle": "現住所",
+    "mailingAddressTitle": "郵送先住所",
+    "mailingAddressSame": "郵送先住所は現住所と同じですか？",
+    "additionalDetailsTitle": "追加詳細",
+    "employmentStartDate": "雇用開始日",
+    "eligibilityType": "資格タイプ",
+    "householdIncome": "推定世帯年収",
+    "householdSize": "世帯人数",
+    "homeowner": "持ち家ですか？",
+    "preferredLanguage": "希望言語",
+    "consentTitle": "同意と確認",
+    "ackPolicies": "E4E Reliefのプライバシーポリシーとクッキーポリシーを読み、同意します。",
+    "commConsent": "申請に関するメールとテキストメッセージを受け取ることに同意します。",
+    "infoCorrect": "提供したすべての情報は正確です。",
+    "errorCorrection": "保存する前に、強調表示されたエラーを修正してください。",
+    "saveButton": "変更を保存",
+    "removeIdentityConfirm": "{{fundName}}のIDを削除してもよろしいですか？",
+    "cannotRemoveActive": "アクティブなIDは削除できません。",
+    "viewMailingAddress": "郵送先住所を表示",
+    "viewPrimaryAddress": "現住所を表示"
+  },
+  "myApplicationsPage": {
+    "title": "私の申請",
+    "searchPlaceholder": "イベント、ステータス、日付で検索...",
+    "noResults": "検索に一致する申請はありません。",
+    "noApplications": "この基金に対する申請はまだありません。"
+  },
+  "myProxyApplicationsPage": {
+    "title": "私の代理申請",
+    "searchPlaceholder": "申請者、イベント、ステータスで検索...",
+    "noResults": "検索に一致する代理申請はありません。",
+    "noApplications": "この基金に対する代理申請はまだありません。"
+  },
+  "supportPage": {
+    "title": "サポートセンター",
+    "emailLabel": "サポートメール",
+    "phoneLabel": "サポート電話",
+    "chatbotButton": "救援申請アシスタントと話す",
+    "chatbotDisclaimer": "救援申請アシスタントはAIを使用しています。その他の質問については、お電話またはメールでお問い合わせください。",
+    "faqTitle": "よくある質問",
+    "faqDescription": "一般的な質問への回答を見つける。",
+    "paymentsTitle": "支払い",
+    "paymentsDescription": "助成金がどのように支払われるかを知る。"
+  },
+  "classVerificationPage": {
+    "maxAttemptsTitle": "提供された詳細が当社の記録と一致しません。",
+    "maxAttemptsBody": "失敗の試行回数が多すぎます。これがエラーだと思われる場合は、サポートにお問い合わせください。",
+    "backToProfile": "プロフィールに戻る",
+    "backToHome": "ホームに戻る",
+    "domainTitle": "会社のメールドメインで確認中",
+    "domainBody": "あなたのメール <1>{{email}}</1> が、基金コード <1>{{fundCode}}</1> の承認されたドメインに属しているか確認しています。",
+    "domainErrorConfig": "この基金のドメイン設定が見つかりません。",
+    "domainErrorMismatch": "あなたのメールドメイン ({{userDomain}}) はこの基金の対象外です。",
+    "domainErrorGeneric": "ドメインを確認できませんでした。",
+    "domainSuccess": "ドメインが確認されました！リダイレクト中...",
+    "rosterTitle": "ステータスの確認",
+    "rosterBody": "ステータスを確認するには、以下の詳細を入力してください。残りの試行回数: {{attempts}}",
+    "employeeIdLabel": "従業員ID",
+    "birthMonthLabel": "誕生月 (1-12)",
+    "birthDayLabel": "誕生日 (1-31)",
+    "rosterErrorMismatch": "提供された詳細が当社の記録と一致しません。もう一度お試しください。",
+    "rosterErrorGeneric": "確認中にエラーが発生しました。後でもう一度お試しください。",
+    "ssoTitle": "SSOで確認中",
+    "ssoBody": "下のボタンをクリックして、会社のSSOアカウントをリンクし、確認を完了してください。新しいウィンドウが開きます。",
+    "ssoButton": "SSOアカウントをリンク",
+    "ssoErrorFailed": "SSOリンクに失敗しました。もう一度試すか、別の方法を使用してください。",
+    "ssoErrorGeneric": "エラーが発生しました。もう一度お試しください。",
+    "successTitle": "確認完了！",
+    "successBody": "これで、この基金の救援を申請する資格が得られました。",
+    "configError": "設定エラー: 基金コード \"{{fundCode}}\" は認識されていません。"
+  },
+  "eligibilityPage": {
+    "title": "支援の対象ですか？",
+    "description": "あなたのプログラムは、以下の資格タイプとイベントをカバーしています。申請する前に対象であることを確認してください。現在の資格ステータスは <1>プロフィールページ</1> で確認できます。",
+    "statusActive": "<1>「アクティブ」</1> は申請可能であることを意味します。",
+    "statusInactive": "<1>「非アクティブ」</1> は確認が必要です。",
+    "header": "対象",
+    "eligibilityType": "資格タイプ",
+    "disasters": "災害",
+    "hardships": "困難",
+    "errorLoading": "あなたの基金 ({{fundCode}}) の資格情報を読み込めませんでした。",
+    "errorFetching": "基金の詳細を取得中にエラーが発生しました。"
+  },
+  "donatePage": {
+    "title": "寄付",
+    "chooseAmount": "金額を選択",
+    "description": "あなたの寛大な寄付は、予期せぬ災害の影響を受けた従業員に重要な経済的支援を提供するのに役立ちます。",
+    "customAmount": "カスタム",
+    "donorInfo": "寄付者情報",
+    "paymentInfo": "支払い情報",
+    "firstName": "名",
+    "lastName": "姓",
+    "email": "メールアドレス",
+    "cardholderName": "カード名義人",
+    "cardNumber": "カード番号",
+    "expiryDate": "有効期限",
+    "cvc": "CVC",
+    "donateButton": "${{amount}} を寄付",
+    "processing": "処理中...",
+    "successTitle": "ありがとうございます！",
+    "successBody": "あなたの ${{amount}} の寛大な寄付は違いを生みます。領収書がメールで送信されました。",
+    "backToSupport": "サポートセンターに戻る",
+    "errorAmount": "有効な金額を入力してください。",
+    "errorFirstName": "名は必須です。",
+    "errorLastName": "姓は必須です。",
+    "errorEmail": "有効なメールアドレスを入力してください。",
+    "errorCardholderName": "カード名義人は必須です。",
+    "errorCardNumber": "有効なカード番号を入力してください。",
+    "errorExpiryFormat": "無効な形式 (月 / 年)。",
+    "errorExpiryDate": "カードの有効期限が切れています。",
+    "errorCvc": "CVCは3桁または4桁である必要があります。"
+  },
+  "chatbotWidget": {
+    "greeting": "こんにちは！救援申請アシスタントです。今日はどのようなご用件でしょうか？あなたの状況についてお気軽にお話しください。",
+    "title": "救援申請アシスタント",
+    "disclaimer": "AI生成コンテンツは不正確な場合があります。この機能を使用することで、<1>AI利用規約</1> および <2>プライバシーポリシー</2> に同意したことになります。",
+    "errorMessage": "申し訳ありませんが、エラーが発生しました。もう一度お試しください。",
+    "placeholder": "メッセージを入力..."
+  },
+  "modals": {
+    "applicationDetail": {
+      "title": "申請詳細",
+      "id": "申請ID:",
+      "submittedBy": "送信者:",
+      "status": "ステータス:",
+      "submittedDate": "送信日:",
+      "decisionedDate": "決定日:",
+      "eventType": "イベントタイプ:",
+      "requestedAmount": "申請金額:",
+      "reasons": "決定理由:",
+      "expensesTitle": "経費",
+      "decisionNotes": "決定メモ"
+    },
+    "terms": {
+      "title": "承諾条件",
+      "body": [
+        "この申請書を提出することにより、提供された情報が私の知る限り真実、正確、かつ完全であることを証明します。虚偽の陳述、不実表示、または省略があった場合、申請の拒否、または雇用の終了を含むその他の懲戒処分につながる可能性があることを理解しています（該当する場合）。",
+        "私は、E4E Reliefおよびその代理人がこの申請書で提供された情報を確認することを許可します。この支援は、適格な災害イベントに対する一時的な救済を提供することを目的としており、私のすべての費用をカバーするものではないことを理解しています。",
+        "私は、この申請および提供される支援に起因または関連するあらゆる請求、責任、または訴訟原因から、E4E Relief、私の雇用主、およびそれぞれの役員、取締役、従業員、および代理人を免責し、損害を与えないことに同意します。",
+        "資金は提供された情報に基づいて付与され、利用可能性の対象となることを理解しています。助成金を受け取っても、将来の支援が保証されるわけではありません。E4E Reliefによるすべての決定は最終的なものです。"
+      ],
+      "closeButton": "読み、理解しました"
+    },
+    "policy": {
+      "title": "法的情報",
+      "privacy": "プライバシーポリシー",
+      "terms": "利用規約",
+      "cookies": "クッキーポリシー",
+      "ai": "AIポリシー"
+    }
+  },
+  "formControls": {
+    "location": "場所",
+    "noCountriesFound": "国が見つかりません",
+    "noOptionsFound": "オプションが見つかりません",
+    "requiredField": "このフィールドは必須です",
+    "addressHelper": "以下に完全な住所を入力または貼り付けると、AIがフィールドに入力します。",
+    "addressHelperPlaceholder": "例：1600 Amphitheatre Parkway, Mountain View, CA 94043",
+    "aiStarter": "以下に状況を説明してください。AI救援アシスタントが申請書を事前に記入します。",
+    "aiStarterPlaceholder": "例：私はAnytown, CAで最近の竜巻の被害を受けた住宅所有者です。家が損壊し、修理に約2500ドルが必要です。4人家族で年収は約6万ドルです。電話番号は555-123-4567で、日本語での連絡を希望します。",
+    "submitDescription": "説明を送信",
+    "aiParseError": "詳細を抽出できませんでした。もう一度試すか、手動でフィールドに入力してください。",
+    "aiSuccess": "成功！見つかった詳細でフォームを事前に入力しました。",
+    "aiDisclaimer": "AI生成コンテンツは不正確な場合があります。この機能を使用することで、<1>AI利用規約</1> および <2>プライバシーポリシー</2> に同意したことになります。",
+    "street1": "住所1",
+    "street2": "住所2",
+    "city": "市区町村",
+    "state": "都道府県",
+    "zip": "郵便番号",
+    "letAIFill": "AIにフィールドを入力を任せる"
+  },
+  "validation": {
+    "required": "このフィールドに入力してください。",
+    "firstNameRequired": "名は必須です。",
+    "lastNameRequired": "姓は必須です。",
+    "mobileNumberRequired": "携帯電話番号は必須です。",
+    "mobileNumberInvalid": "有効な電話番号を入力してください（7桁以上）。",
+    "countryRequired": "国は必須です。",
+    "street1Required": "住所1は必須です。",
+    "cityRequired": "市区町村は必須です。",
+    "stateRequired": "都道府県は必須です。",
+    "zipRequired": "郵便番号は必須です。",
+    "employmentStartDateRequired": "雇用開始日は必須です。",
+    "eligibilityTypeRequired": "資格タイプは必須です。",
+    "householdIncomeRequired": "世帯年収は必須です。",
+    "householdSizeRequired": "世帯人数は必須です。",
+    "homeownerRequired": "持ち家の状況は必須です。",
+    "mailingAddressSameRequired": "郵送先住所のオプションを選択してください。",
+    "ackPoliciesRequired": "ポリシーに同意する必要があります。",
+    "commConsentRequired": "通信に同意する必要があります。",
+    "infoCorrectRequired": "情報が正しいことを確認する必要があります。",
+    "applicantFirstNameRequired": "申請者の名は必須です。",
+    "applicantLastNameRequired": "申請者の姓は必須です。",
+    "applicantEmailRequired": "有効な申請者のメールアドレスが必要です。"
+  },
+  "faqPage": {
+    "title": "よくある質問",
+    "backToSupport": "サポートに戻る",
+    "applicantTitle": "申請者向け",
+    "donorTitle": "寄付者向け",
+    "applicantFaqs": [
+      {
+        "question": "新しい申請を開始するにはどうすればよいですか？",
+        "answer": "ホーム画面から「申請」（標準フォーム）または「AI申請」（会話型体験）をタップして、新しい申請を開始できます。対象外であるか、助成金の上限に達している場合、両方のオプションは無効になります。"
+      },
+      {
+        "question": "「申請」と「AI申請」の違いは何ですか？",
+        "answer": [
+          "#### 申請",
+          "標準の申請は、手動で記入するマルチステップのフォームです。従来のフォーム記入体験を好む場合に最適です。",
+          "",
+          "#### AI申請",
+          "AI申請は、AIアシスタントが申請を完了するために1つずつ質問する会話型体験です。よりガイドされた対話的なプロセスを好む場合に最適です。"
+        ]
+      },
+      {
+        "question": "申請資格があるかどうかはどうすればわかりますか？",
+        "answer": "資格ステータスは、プロフィールページとヘッダーに表示されます。ステータスが「対象」の場合、申請できます。「確認が必要」と表示されている場合は、まず確認プロセスを完了する必要があります。これはプロフィールの「基金ID」セクションから開始できます。"
+      },
+      {
+        "question": "助成金の上限はどこで確認できますか？",
+        "answer": "残りの12か月および生涯の助成金残高は、プロフィールページの「私の申請」セクションの上部に表示されます。"
+      },
+      {
+        "question": "確認に失敗しました。どうすればよいですか？",
+        "answer": "最大試行回数後に確認に失敗した場合、救援キューに入れられます。そこからサポートに連絡するか、名前を修正して正しい基金コードで再度確認を試みることができます。"
+      },
+      {
+        "question": "助成金の支払いはどのように受け取りますか？",
+        "answer": "助成金の支払いは、支払いパートナーを通じて行われます。サポートセンターからアクセスできる「支払い」ページで、米国および国際的な支払いオプションの詳細ガイドを見つけることができます。"
+      }
+    ],
+    "donorFaqs": [
+      {
+        "question": "寄付は税控除の対象になりますか？",
+        "answer": "はい、E4E Reliefは501(c)(3)の慈善団体です。あなたの寄付は法律で認められる範囲で税控除の対象となります。寄付の領収書がメールで送信されます。"
+      },
+      {
+        "question": "E4E Reliefは私の寄付をどのように使用しますか？",
+        "answer": "寄付の100%が、困っている従業員への助成金の資金として直接使用されます。あなたの貢献は、予期せぬ災害や困難の影響を受けた個人に重要な経済的支援を提供します。"
+      },
+      {
+        "question": "特定の基金や従業員に寄付できますか？",
+        "answer": "公平性とプライバシーを確保するため、すべての寄付は、すべてのパートナープログラムの従業員を支援する一般救援基金に入ります。特定の個人や基金に寄付を指定することはできません。"
+      },
+      {
+        "question": "他にどのような寄付方法がありますか？",
+        "answer": "計画的寄付や企業パートナーシップなど、その他の寄付方法については、E4E Reliefドナーサービス（(704) 973-4564）または <1>donorservices@e4erelief.org</1> までお問い合わせください。"
+      }
+    ]
+  },
+  "paymentOptionsPage": {
+    "title": "支払いオプション",
+    "description": "助成金は支払いパートナーを通じて支払われます。以下に、米国および国際的な申請者向けの情報があります。",
+    "usApplicantsTitle": "米国の申請者向け",
+    "usApplicantsBody": "米国の助成金の支払いは、Bank of America Recipient Selectを通じて行われます。支払い方法（Zelle、ACH、または小切手）の選択方法に関する指示が記載されたメールがBank of Americaから届きます。",
+    "usApplicantsLink": "Bank of Americaで詳細を見る",
+    "intlApplicantsTitle": "国際的な申請者向け",
+    "intlSupportTitle": "支払いサポート",
+    "intlSupportBody": "国際的な支払いのサポートについては、<a href=\"mailto:support@e4erelief.example\" class=\"font-semibold text-white hover:underline\">support@e4erelief.example</a> までお問い合わせください。",
+    "intlPartnersTitle": "支払いパートナーガイド",
+    "converaGuide": "Converaガイド",
+    "tipaltiGuide": "Tipaltiガイド"
+  }
+}

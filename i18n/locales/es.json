@@ -1,0 +1,515 @@
+
+{
+  "common": {
+    "next": "Siguiente",
+    "back": "Atrás",
+    "submit": "Enviar",
+    "save": "Guardar Cambios",
+    "cancel": "Cancelar",
+    "verify": "Verificar",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "yes": "Sí",
+    "no": "No",
+    "unknownError": "Ocurrió un error desconocido.",
+    "aiApplyingDetails": "Estamos aplicando los detalles a la solicitud ahora.",
+    "close": "Cerrar",
+    "eligible": "Elegible",
+    "ineligible": "No Elegible",
+    "collapse": "Ocultar"
+  },
+  "applicationStatus": {
+    "Submitted": "Enviado",
+    "Awarded": "Adjudicado",
+    "Declined": "Rechazado"
+  },
+  "sessionTimeout": {
+    "title": "Sesión a punto de expirar",
+    "body": "Por seguridad, su sesión se cerrará en:",
+    "logoutButton": "Cerrar sesión ahora",
+    "extendButton": "Extender sesión"
+  },
+  "reliefQueue": {
+    "helpRoster": "Su empresa proporciona a E4E Relief una lista de empleados elegibles. Asegúrese de que sus criterios de elegibilidad se ingresen exactamente como su empleador los tiene en su sistema de recursos humanos.",
+    "helpDomain": "Su empleador exige una lista de dominios de correo electrónico permitidos para registrarse en esta aplicación. Asegúrese de registrar una nueva cuenta con el correo electrónico proporcionado por su empresa.",
+    "helpSSO": "Su empleador admite SSO. Si ha llegado a la Cola de Ayuda después de autenticarse con éxito con su empleador, comuníquese con nuestro <phoneLink>{{phone}}</phoneLink> o <emailLink>{{email}}</emailLink>."
+  },
+  "eligibilityIndicator": {
+    "eligibleMessage": "Estás verificado para este programa de fondos de ayuda. Solicitar ayuda no garantiza que se desembolsará un pago.",
+    "verificationNeededMessage": "Visita 'Identidades del Fondo' en tu página de Perfil para verificarte y ser elegible para la ayuda."
+  },
+  "app": {
+    "loading": "Cargando...",
+    "authenticating": "Autenticando...",
+    "loadingProfile": "Cargando Perfil..."
+  },
+  "nav": {
+    "home": "Inicio",
+    "profile": "Perfil",
+    "apply": "Solicitar",
+    "aiApply": "Solicitud IA",
+    "support": "Soporte",
+    "donate": "Donar",
+    "fundPortal": "Fondo",
+    "logout": "Cerrar Sesión",
+    "welcome": "Bienvenido, {{name}}"
+  },
+  "loginPage": {
+    "emailLabel": "Correo Electrónico",
+    "passwordLabel": "Contraseña",
+    "signInButton": "Iniciar Sesión",
+    "noAccount": "¿No tienes una cuenta?",
+    "signUpLink": "Regístrate",
+    "errorGeneric": "Por favor, ingresa el correo y la contraseña.",
+    "errorInvalid": "Correo o contraseña no válidos. Inténtalo de nuevo.",
+    "forgotPasswordLink": "¿Olvidaste tu contraseña?"
+  },
+  "forgotPasswordPage": {
+    "title": "Restablecer Contraseña",
+    "instruction": "Ingresa tu dirección de correo electrónico y te enviaremos un enlace para restablecer tu contraseña.",
+    "sendButton": "Enviar Enlace de Restablecimiento",
+    "backToLogin": "Volver a Iniciar Sesión",
+    "successMessage": "Si existe una cuenta con ese correo electrónico, se ha enviado un enlace para restablecer la contraseña. Por favor, revisa tu bandeja de entrada.",
+    "errorGeneric": "Ocurrió un error inesperado. Por favor, inténtalo de nuevo.",
+    "errorEmailRequired": "Por favor, ingresa una dirección de correo electrónico válida."
+  },
+  "registerPage": {
+    "firstNameLabel": "Nombre",
+    "lastNameLabel": "Apellido",
+    "emailLabel": "Correo Electrónico",
+    "passwordLabel": "Contraseña",
+    "fundCodeLabel": "Código del Fondo",
+    "fundCodeHelp": "Ingresa el código proporcionado por tu empleador o programa.",
+    "signUpButton": "Registrarse",
+    "hasAccount": "¿Ya tienes una cuenta?",
+    "signInLink": "Inicia Sesión",
+    "errorAllFields": "Todos los campos son obligatorios.",
+    "errorGeneric": "El registro falló. Por favor, inténtalo de nuevo."
+  },
+  "homePage": {
+    "title": "Inicio",
+    "poweredBy": "Impulsado por E4E Relief",
+    "applyTooltipVerification": "Se requiere verificación de clase para acceder a las solicitudes.",
+    "applyTooltipLimits": "Has alcanzado los límites de tu subvención."
+  },
+  "aiApplyPage": {
+    "title": "Solicitud con IA",
+    "backToHome": "Volver a Inicio",
+    "greeting": "¡Hola! Revisa las preguntas de la solicitud y déjame saber sobre tu situación. ¡Estamos aquí para ayudar!",
+    "progressTitle": "Progreso de la Solicitud",
+    "additionalDetailsPreviewTitle": "Detalles Adicionales",
+    "profileAcknowledgementsPreviewTitle": "Confirmación de Perfil",
+    "eventDetailsPreviewTitle": "Detalles del Evento",
+    "expensesPreviewTitle": "Gastos",
+    "agreementsPreviewTitle": "Acuerdos y Envío",
+    "previewSubtitle": "Esta lista se actualiza a medida que respondes al asistente.",
+    "eligibilityNotice": "Actualmente no eres elegible para solicitar. Por favor, visita tu página de Perfil para verificar tu estado de verificación y los límites de tu subvención.",
+    "statusAnalyzing": "Analizando...",
+    "statusUpdating": "Actualizando solicitud...",
+    "statusFinalizing": "Finalizando respuesta..."
+  },
+  "applyPage": {
+    "title": "Solicitar Ayuda",
+    "eligibility": "Elegible para solicitar ayuda",
+    "verificationNeeded": "Verificación necesaria",
+    "noActiveFund": "No hay fondo activo seleccionado.",
+    "limitsReachedTitle": "Límites de Subvención Alcanzados",
+    "limitsReachedBody": "No eres elegible para solicitar en este momento porque has alcanzado tus límites de subvención de 12 meses o de por vida.",
+    "limitsReachedCta": "Por favor, revisa tu {{profileLink}} para más detalles.",
+    "profileLink": "Perfil"
+  },
+  "applyContactPage": {
+    "getStartedTitle": "Empecemos",
+    "contactInfoTitle": "Información de Contacto",
+    "addresses": "Direcciones",
+    "primaryAddressTitle": "Dirección Principal",
+    "mailingAddressTitle": "Dirección Postal",
+    "additionalDetailsTitle": "Detalles Adicionales",
+    "consentTitle": "Consentimiento y Reconocimiento",
+    "collapse": "Ocultar",
+    "firstName": "Nombre",
+    "middleName": "Segundo(s) Nombre(s)",
+    "lastName": "Apellido",
+    "suffix": "Sufijo",
+    "email": "Correo Electrónico",
+    "mobileNumber": "Número de Móvil",
+    "mobileNumberPlaceholder": "(555) 555-5555",
+    "mailingAddressSame": "¿La dirección postal es la misma que la principal?",
+    "employmentStartDate": "Fecha de Inicio de Empleo",
+    "eligibilityType": "Tipo de Elegibilidad",
+    "householdIncome": "Ingreso Anual Estimado del Hogar",
+    "householdSize": "Número de personas en el hogar",
+    "homeowner": "¿Eres propietario de tu vivienda?",
+    "preferredLanguage": "Idioma de Preferencia",
+    "ackPolicies": "He leído y acepto la Política de Privacidad y la Política de Cookies de E4E Relief.",
+    "commConsent": "Doy mi consentimiento para recibir correos electrónicos y mensajes de texto sobre mi solicitud.",
+    "infoCorrect": "Toda la información que he proporcionado es precisa.",
+    "errorCorrection": "Por favor, corrige los errores resaltados para continuar."
+  },
+  "applyEventPage": {
+    "title": "Detalles del Evento",
+    "disasterLabel": "Selecciona el desastre ocurrido",
+    "otherDisasterLabel": "Elige el desastre que te afectó",
+    "eventDateLabel": "¿Cuál fue la fecha de tu evento?",
+    "powerLossLabel": "¿Este evento causó una pérdida de energía en tu residencia principal por más de 4 horas?",
+    "powerLossDaysLabel": "¿Cuántos día(s) estuviste sin electricidad?",
+    "evacuatedLabel": "¿Has evacuado o planeas evacuar?",
+    "evacuatingFromPrimaryLabel": "¿Estás evacuando de tu residencia principal?",
+    "evacuationReasonLabel": "Selecciona por qué se requiere la evacuación de la Dirección de Evacuación Alternativa",
+    "stayedWithFamilyLabel": "¿Te quedaste o planeas quedarte con un familiar o amigo?",
+    "evacuationStartDateLabel": "¿Cuándo comenzaste o planeas comenzar tu evacuación?",
+    "evacuationNightsLabel": "¿Cuántas noches fuiste evacuado o planeas evacuar?",
+    "additionalDetailsLabel": "Proporciona detalles adicionales que respalden tu solicitud de ayuda y necesidades de gastos",
+    "additionalDetailsPlaceholder": "Describe cualquier otra información relevante aquí...",
+    "requestedAmountLabel": "Pago de Ayuda Solicitado ($)",
+    "requestedAmountPlaceholder": "0.00",
+    "errorEvent": "Por favor, selecciona el desastre que experimentaste.",
+    "errorOtherEvent": "Por favor, especifica el desastre.",
+    "errorEventDate": "Por favor, ingresa la fecha del evento.",
+    "errorEvacuated": "Por favor, responde si has evacuado.",
+    "errorEvacuatingFromPrimary": "Por favor, responde si estás evacuando de tu residencia principal.",
+    "errorStayedWithFamily": "Por favor, responde si te quedaste con un familiar o amigo.",
+    "errorEvacuationStartDate": "Por favor, ingresa tu fecha de inicio de evacuación.",
+    "errorEvacuationNights": "Por favor, ingresa un número válido de noches.",
+    "errorPowerLoss": "Por favor, responde si perdiste la electricidad.",
+    "errorPowerLossDays": "Por favor, ingresa un número válido de días.",
+    "errorRequestedAmount": "La cantidad solicitada debe ser mayor que cero.",
+    "errorEventName": "Por favor, selecciona el nombre de la tormenta.",
+    "errorEvacuationReason": "Por favor, proporciona un motivo para la evacuación."
+  },
+  "applyExpensesPage": {
+    "title": "Gastos",
+    "description": "Agrega montos y recibos para cualquiera de las categorías aplicables a continuación. No se requiere un recibo para ningún gasto.",
+    "amountLabel": "Monto (USD)",
+    "receiptLabel": "Recibo",
+    "uploadButton": "Subir",
+    "uploadingButton": "Subiendo...",
+    "noFileChosen": "Ningún archivo elegido",
+    "removeReceipt": "Eliminar recibo",
+    "uploadFailedError": "La subida falló. Por favor, inténtalo de nuevo.",
+    "uploadFailedUnauthorized": "Permiso denegado. Por favor, verifica tus reglas de seguridad de Firebase Storage.",
+    "uploadFailedGeneric": "La subida falló: {{message}}",
+    "totalExpensesLabel": "Gastos Totales",
+    "errorAmount": "El monto debe ser mayor a cero.",
+    "expenseTypes": {
+      "BasicDisasterSupplies": "Suministros Básicos para Desastres",
+      "FoodSpoilage": "Alimentos Echados a Perder",
+      "Meals": "Comidas"
+    }
+  },
+  "applyTermsPage": {
+    "title": "Acuerdos y Envío",
+    "shareStoryTitle": "Comparte tu Historia",
+    "shareStoryQuestion": "¿Estarías dispuesto a compartir tu historia con tu empleador?",
+    "shareStoryDisclaimer": "*Si respondes que sí, compartiremos tu nombre y dirección de correo electrónico y tu empleador podría contactarte para obtener información adicional.",
+    "additionalInfoQuestion": "¿Estás interesado en recibir información adicional sobre asistencia más allá del apoyo financiero?",
+    "termsTitle": "Términos de Aceptación",
+    "termsCheckboxLabel": "Reconozco y acepto que marcar esta casilla sirve como mi firma electrónica y confirma que he leído, entiendo y acepto los",
+    "termsLink": "Términos de Aceptación",
+    "termsViewNotice": "Por favor, revisa los términos antes de aceptar.",
+    "submitButton": "Enviar Solicitud",
+    "submittingButton": "Enviando...",
+    "errorShareStory": "Por favor, indica si estás dispuesto a compartir tu historia.",
+    "errorAdditionalInfo": "Por favor, indica si estás interesado en recibir información adicional.",
+    "errorTermsAgreed": "Debes aceptar los Términos de Aceptación para enviar tu solicitud."
+  },
+  "submissionSuccessPage": {
+    "title": "¡Envío Exitoso!",
+    "body1": "Tu solicitud de ayuda ha sido recibida.",
+    "appIdLabel": "Tu ID de Solicitud es:",
+    "body2": "Puedes rastrear el estado de tu solicitud en la sección \"Mis Solicitudes\" de tu página de perfil.",
+    "goToProfileButton": "Ir a Mi Perfil"
+  },
+  "profilePage": {
+    "title": "Perfil",
+    "myApplicationsTitle": "Mis Solicitudes",
+    "twelveMonthRemaining": "Restante de 12 Meses",
+    "lifetimeRemaining": "Restante de por Vida",
+    "submitted": "Enviado",
+    "status": "Estado",
+    "seeAllApplications": "Ver Todas las Solicitudes",
+    "applyNow": "Solicitar Ahora",
+    "noApplications": "Aún no has enviado ninguna solicitud para este fondo.",
+    "fundIdentitiesTitle": "Identidades del Fondo",
+    "fundIdentitiesDescription": "Gestiona tus identidades de fondo. Agrega o elimina códigos de fondo adicionales si eres elegible para más de un programa.",
+    "active": "Activo",
+    "setActive": "Activar",
+    "addNewIdentity": "+ Agregar Nueva Identidad",
+    "enterNewFundCode": "Ingresar Nuevo Código de Fondo",
+    "seeAll": "Ver Todos",
+    "showLess": "Mostrar Menos",
+    "contactInfoTitle": "Información de Contacto",
+    "firstName": "Nombre",
+    "middleName": "Segundo(s) Nombre(s)",
+    "lastName": "Apellido",
+    "suffix": "Sufijo",
+    "email": "Correo Electrónico",
+    "mobileNumber": "Número de Móvil",
+    "collapse": "Ocultar",
+    "addresses": "Direcciones",
+    "primaryAddressTitle": "Dirección Principal",
+    "mailingAddressTitle": "Dirección Postal",
+    "mailingAddressSame": "¿La dirección postal es la misma que la principal?",
+    "additionalDetailsTitle": "Detalles Adicionales",
+    "employmentStartDate": "Fecha de Inicio de Empleo",
+    "eligibilityType": "Tipo de Elegibilidad",
+    "householdIncome": "Ingreso Anual Estimado del Hogar",
+    "householdSize": "Número de personas en el hogar",
+    "homeowner": "¿Eres propietario de tu vivienda?",
+    "preferredLanguage": "Idioma de Preferencia",
+    "consentTitle": "Consentimiento y Reconocimiento",
+    "ackPolicies": "He leído y acepto la Política de Privacidad y la Política de Cookies de E4E Relief.",
+    "commConsent": "Doy mi consentimiento para recibir correos electrónicos y mensajes de texto sobre mi solicitud.",
+    "infoCorrect": "Toda la información que he proporcionado es precisa.",
+    "errorCorrection": "Por favor, corrige los errores resaltados antes de guardar.",
+    "saveButton": "Guardar Cambios",
+    "removeIdentityConfirm": "¿Estás seguro de que quieres eliminar la identidad para {{fundName}}?",
+    "cannotRemoveActive": "No puedes eliminar tu identidad activa.",
+    "viewMailingAddress": "Ver Dirección Postal",
+    "viewPrimaryAddress": "Ver Dirección Principal"
+  },
+  "myApplicationsPage": {
+    "title": "Mis Solicitudes",
+    "searchPlaceholder": "Buscar por evento, estado, fecha...",
+    "noResults": "Ninguna solicitud coincide con tu búsqueda.",
+    "noApplications": "Aún no has enviado ninguna solicitud para este fondo."
+  },
+  "myProxyApplicationsPage": {
+    "title": "Mis Solicitudes de Apoderado",
+    "searchPlaceholder": "Buscar por solicitante, evento, estado...",
+    "noResults": "Ninguna solicitud de apoderado coincide con tu búsqueda.",
+    "noApplications": "Aún no has enviado ninguna solicitud de apoderado para este fondo."
+  },
+  "supportPage": {
+    "title": "Centro de Soporte",
+    "emailLabel": "Correo de Soporte",
+    "phoneLabel": "Teléfono de Soporte",
+    "chatbotButton": "Hablar con el Asistente de Solicitud de Ayuda",
+    "chatbotDisclaimer": "El Asistente de Solicitud de Ayuda usa IA. Llámanos o envíanos un correo con cualquier pregunta adicional.",
+    "faqTitle": "Preguntas Frecuentes",
+    "faqDescription": "Encuentra respuestas a preguntas comunes.",
+    "paymentsTitle": "Pagos",
+    "paymentsDescription": "Aprende cómo se desembolsan las subvenciones."
+  },
+  "classVerificationPage": {
+    "maxAttemptsTitle": "Los detalles proporcionados no coinciden con nuestros registros.",
+    "maxAttemptsBody": "Demasiados intentos fallidos. Por favor, contacta a soporte si crees que esto es un error.",
+    "backToProfile": "Volver al Perfil",
+    "backToHome": "Volver a Inicio",
+    "domainTitle": "Verificando con Dominio de Correo de la Empresa",
+    "domainBody": "Estamos verificando si tu correo <1>{{email}}</1> pertenece a un dominio aprobado para el código de fondo <1>{{fundCode}}</1>.",
+    "domainErrorConfig": "No se encontró configuración de dominio para este fondo.",
+    "domainErrorMismatch": "El dominio de tu correo ({{userDomain}}) no es elegible para este fondo.",
+    "domainErrorGeneric": "No se pudo verificar el dominio.",
+    "domainSuccess": "¡Dominio verificado! Redirigiendo...",
+    "rosterTitle": "Verifica tu Estado",
+    "rosterBody": "Por favor, ingresa los siguientes detalles para verificar tu estado. Intentos restantes: {{attempts}}",
+    "employeeIdLabel": "ID de Empleado",
+    "birthMonthLabel": "Mes de Nacimiento (1-12)",
+    "birthDayLabel": "Día de Nacimiento (1-31)",
+    "rosterErrorMismatch": "Los detalles proporcionados no coinciden con nuestros registros. Por favor, inténtalo de nuevo.",
+    "rosterErrorGeneric": "Ocurrió un error durante la verificación. Por favor, inténtalo más tarde.",
+    "ssoTitle": "Verificando con SSO",
+    "ssoBody": "Haz clic en el botón de abajo para vincular tu cuenta SSO de la empresa y completar la verificación. Esto abrirá una nueva ventana.",
+    "ssoButton": "Vincular Cuenta SSO",
+    "ssoErrorFailed": "La vinculación SSO falló. Por favor, inténtalo de nuevo o usa otro método.",
+    "ssoErrorGeneric": "Ocurrió un error. Por favor, inténtalo de nuevo.",
+    "successTitle": "¡Verificación Completa!",
+    "successBody": "Ahora eres elegible para solicitar ayuda para este fondo.",
+    "configError": "Error de configuración: El código de fondo \"{{fundCode}}\" no se reconoce."
+  },
+  "eligibilityPage": {
+    "title": "¿Elegible para Asistencia?",
+    "description": "Tu programa cubre los tipos de elegibilidad y eventos a continuación. Confirma que eres elegible antes de solicitar. Puedes verificar tu estado de elegibilidad actual en tu <1>página de Perfil</1>.",
+    "statusActive": "<1>'Activo'</1> significa que eres elegible para solicitar.",
+    "statusInactive": "<1>'Inactivo'</1> requiere verificación adicional.",
+    "header": "Elegible",
+    "eligibilityType": "Tipo de Elegibilidad",
+    "disasters": "Desastres",
+    "hardships": "Dificultades",
+    "errorLoading": "No se pudo cargar la información de elegibilidad para tu fondo ({{fundCode}}).",
+    "errorFetching": "Ocurrió un error al obtener los detalles del fondo."
+  },
+  "donatePage": {
+    "title": "Donar",
+    "chooseAmount": "Elige un Monto",
+    "description": "Tu generosa contribución nos ayuda a proporcionar asistencia financiera crítica a los empleados afectados por desastres imprevistos.",
+    "customAmount": "Otro",
+    "donorInfo": "Información del Donante",
+    "paymentInfo": "Información de Pago",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "email": "Correo Electrónico",
+    "cardholderName": "Nombre en la Tarjeta",
+    "cardNumber": "Número de Tarjeta",
+    "expiryDate": "Fecha de Vencimiento",
+    "cvc": "CVC",
+    "donateButton": "Donar ${{amount}}",
+    "processing": "Procesando...",
+    "successTitle": "¡Gracias!",
+    "successBody": "Tu generosa donación de ${{amount}} marcará la diferencia. Se ha enviado un recibo a tu correo electrónico.",
+    "backToSupport": "Volver al Centro de Soporte",
+    "errorAmount": "Por favor, ingresa un monto válido.",
+    "errorFirstName": "El nombre es obligatorio.",
+    "errorLastName": "El apellido es obligatorio.",
+    "errorEmail": "Por favor, ingresa un correo electrónico válido.",
+    "errorCardholderName": "El nombre en la tarjeta es obligatorio.",
+    "errorCardNumber": "Por favor, ingresa un número de tarjeta válido.",
+    "errorExpiryFormat": "Formato no válido (MM / AA).",
+    "errorExpiryDate": "La tarjeta ha expirado.",
+    "errorCvc": "El CVC debe tener 3 o 4 dígitos."
+  },
+  "chatbotWidget": {
+    "greeting": "¡Hola! Soy el Asistente de Solicitud de Ayuda. ¿Cómo puedo ayudarte hoy? Siéntete libre de contarme sobre tu situación.",
+    "title": "Asistente de Solicitud de Ayuda",
+    "disclaimer": "El contenido generado por IA puede ser inexacto. Al usar esta función, aceptas nuestros <1>Términos de IA</1> y <2>Política de Privacidad</2>.",
+    "errorMessage": "Lo siento, encontré un error. Por favor, inténtalo de nuevo.",
+    "placeholder": "Escribe tu mensaje..."
+  },
+  "modals": {
+    "applicationDetail": {
+      "title": "Detalles de la Solicitud",
+      "id": "ID de Solicitud:",
+      "submittedBy": "Enviado por:",
+      "status": "Estado:",
+      "submittedDate": "Fecha de Envío:",
+      "decisionedDate": "Fecha de Decisión:",
+      "eventType": "Tipo de Evento:",
+      "requestedAmount": "Monto Solicitado:",
+      "reasons": "Razones de la Decisión:",
+      "expensesTitle": "Gastos",
+      "decisionNotes": "Notas de Decisión"
+    },
+    "terms": {
+      "title": "Términos de Aceptación",
+      "body": [
+        "Al enviar esta solicitud, certifico que la información proporcionada es verdadera, correcta y completa a mi leal saber y entender. Entiendo que cualquier declaración falsa, tergiversación u omisión puede llevar a la denegación de mi solicitud u otra acción disciplinaria, hasta e incluyendo la terminación del empleo, donde aplique.",
+        "Autorizo a E4E Relief y a sus agentes a verificar la información proporcionada en esta solicitud. Entiendo que esta asistencia tiene como objetivo proporcionar un alivio temporal para eventos de desastre calificados y puede no cubrir todos mis gastos.",
+        "Acepto liberar y eximir de toda responsabilidad a E4E Relief, mi empleador y sus respectivos funcionarios, directores, empleados y agentes de cualquier reclamo, responsabilidad o causa de acción que surja de o esté relacionada con esta solicitud y cualquier asistencia proporcionada.",
+        "Entiendo que los fondos se otorgan en función de la información proporcionada y están sujetos a disponibilidad. Recibir una subvención no garantiza asistencia futura. Todas las decisiones tomadas por E4E Relief son finales."
+      ],
+      "closeButton": "He Leído y Entendido"
+    },
+    "policy": {
+      "title": "Información Legal",
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Uso",
+      "cookies": "Política de Cookies",
+      "ai": "Política de IA"
+    }
+  },
+  "formControls": {
+    "location": "Ubicación",
+    "noCountriesFound": "No se encontraron países",
+    "noOptionsFound": "No se encontraron opciones",
+    "requiredField": "Este campo es obligatorio",
+    "addressHelper": "Escribe o pega una dirección completa a continuación y deja que nuestra IA llene los campos por ti.",
+    "addressHelperPlaceholder": "ej., 1600 Amphitheatre Parkway, Mountain View, CA 94043",
+    "aiStarter": "Describe tu situación a continuación y nuestro Asistente de Ayuda IA pre-llenará tu solicitud.",
+    "aiStarterPlaceholder": "ej., Soy propietario de una casa afectado por el reciente tornado en Anytown, CA. Mi casa sufrió daños y necesito unos $2500 para reparaciones. Nuestro hogar de 4 personas gana unos $60k/año. Mi teléfono es 555-123-4567 y prefiero comunicarme en español.",
+    "submitDescription": "Enviar Descripción",
+    "aiParseError": "No se pudieron extraer los detalles. Por favor, inténtalo de nuevo o llena los campos manualmente.",
+    "aiSuccess": "¡Éxito! Hemos pre-llenado el formulario con los detalles que encontramos.",
+    "aiDisclaimer": "El contenido generado por IA puede ser inexacto. Al usar esta función, aceptas nuestros <1>Términos de IA</1> y <2>Política de Privacidad</2>.",
+    "street1": "Calle 1",
+    "street2": "Calle 2",
+    "city": "Ciudad",
+    "state": "Estado / Provincia",
+    "zip": "Código Postal",
+    "letAIFill": "Deja que la IA complete los campos por ti"
+  },
+  "validation": {
+    "required": "Por favor, rellena este campo.",
+    "firstNameRequired": "El nombre es obligatorio.",
+    "lastNameRequired": "El apellido es obligatorio.",
+    "mobileNumberRequired": "El número de móvil es obligatorio.",
+    "mobileNumberInvalid": "Por favor, introduce un número de teléfono válido (al menos 7 dígitos).",
+    "countryRequired": "El país es obligatorio.",
+    "street1Required": "La calle 1 es obligatoria.",
+    "cityRequired": "La ciudad es obligatoria.",
+    "stateRequired": "El estado es obligatorio.",
+    "zipRequired": "El código postal es obligatorio.",
+    "employmentStartDateRequired": "La fecha de inicio del empleo es obligatoria.",
+    "eligibilityTypeRequired": "El tipo de elegibilidad es obligatorio.",
+    "householdIncomeRequired": "El ingreso del hogar es obligatorio.",
+    "householdSizeRequired": "El tamaño del hogar es obligatorio.",
+    "homeownerRequired": "El estado de propietario es obligatorio.",
+    "mailingAddressSameRequired": "Por favor, selecciona una opción para la dirección postal.",
+    "ackPoliciesRequired": "Debes aceptar las políticas.",
+    "commConsentRequired": "Debes dar tu consentimiento para las comunicaciones.",
+    "infoCorrectRequired": "Debes confirmar que tu información es correcta.",
+    "applicantFirstNameRequired": "El nombre del solicitante es obligatorio.",
+    "applicantLastNameRequired": "El apellido del solicitante es obligatorio.",
+    "applicantEmailRequired": "Se requiere un correo electrónico válido del solicitante."
+  },
+  "faqPage": {
+    "title": "Preguntas Frecuentes",
+    "backToSupport": "Volver a Soporte",
+    "applicantTitle": "Para Solicitantes",
+    "donorTitle": "Para Donantes",
+    "applicantFaqs": [
+      {
+        "question": "¿Cómo inicio una nueva solicitud?",
+        "answer": "Puedes iniciar una nueva solicitud desde la pantalla de Inicio tocando 'Solicitar' para el formulario estándar, o 'Solicitud IA' para una experiencia conversacional. Ambas opciones están deshabilitadas si no eres elegible o has alcanzado tus límites de subvención."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre 'Solicitar' y 'Solicitud IA'?",
+        "answer": [
+          "#### Solicitar",
+          "La solicitud estándar es un formulario de varios pasos que llenas manualmente. Es ideal si prefieres una experiencia tradicional de llenado de formularios.",
+          "",
+          "#### Solicitud IA",
+          "La Solicitud IA es una experiencia conversacional donde un asistente de IA te hace preguntas una por una para completar tu solicitud. Es ideal si prefieres un proceso más guiado e interactivo."
+        ]
+      },
+      {
+        "question": "¿Cómo sé si soy elegible para solicitar?",
+        "answer": "Tu estado de elegibilidad se muestra en tu página de Perfil y en el encabezado. Si tu estado es 'Elegible', puedes solicitar. Si muestra 'Verificación Necesaria', primero debes completar el proceso de verificación. Puedes iniciarlo desde la sección 'Identidades del Fondo' de tu Perfil."
+      },
+      {
+        "question": "¿Dónde puedo ver mis límites de subvención?",
+        "answer": "Tus saldos restantes de subvención de 12 meses y de por vida se muestran en la parte superior de la sección 'Mis Solicitudes' en tu página de Perfil."
+      },
+      {
+        "question": "Fallé en la verificación, ¿qué hago ahora?",
+        "answer": "Si fallas en la verificación después del número máximo de intentos, serás colocado en la Cola de Ayuda. Desde allí, puedes contactar a soporte o corregir tu nombre e intentar nuevamente la verificación con el código de fondo correcto."
+      },
+      {
+        "question": "¿Cómo recibiré el pago de mi subvención?",
+        "answer": "Los pagos de las subvenciones se desembolsan a través de nuestros socios de pago. Puedes encontrar guías detalladas para opciones de pago en EE. UU. e internacionales en la página de 'Pagos', accesible desde el Centro de Soporte."
+      }
+    ],
+    "donorFaqs": [
+      {
+        "question": "¿Mi donación es deducible de impuestos?",
+        "answer": "Sí, E4E Relief es una organización benéfica 501(c)(3). Tu donación es deducible de impuestos en la medida permitida por la ley. Recibirás un recibo de tu contribución por correo electrónico."
+      },
+      {
+        "question": "¿Cómo utiliza E4E Relief mi donación?",
+        "answer": "El 100% de tu donación se destina directamente a financiar subvenciones para empleados necesitados. Tu contribución proporciona asistencia financiera crítica a personas afectadas por desastres y dificultades imprevistas."
+      },
+      {
+        "question": "¿Puedo donar a un fondo o empleado específico?",
+        "answer": "Para garantizar la equidad y la privacidad, todas las donaciones se destinan a un fondo de ayuda general que apoya a los empleados en todos nuestros programas asociados. No podemos dirigir donaciones a individuos o fondos específicos."
+      },
+      {
+        "question": "¿De qué otras maneras puedo donar?",
+        "answer": "Para obtener información sobre otras formas de donar, como donaciones planificadas o asociaciones corporativas, comunícate con los Servicios para Donantes de E4E Relief al (704) 973-4564 o a <1>donorservices@e4erelief.org</1>."
+      }
+    ]
+  },
+  "paymentOptionsPage": {
+    "title": "Opciones de Pago",
+    "description": "Las subvenciones se desembolsan a través de nuestros socios de pago. A continuación encontrará información para solicitantes de EE. UU. e internacionales.",
+    "usApplicantsTitle": "Para Solicitantes en EE. UU.",
+    "usApplicantsBody": "Los pagos de subvenciones en EE. UU. se realizan a través de Bank of America Recipient Select. Recibirá un correo electrónico de Bank of America con instrucciones sobre cómo elegir su método de pago (Zelle, ACH o cheque).",
+    "usApplicantsLink": "Más Información en Bank of America",
+    "intlApplicantsTitle": "Para Solicitantes Internacionales",
+    "intlSupportTitle": "Soporte de Pagos",
+    "intlSupportBody": "Para obtener ayuda con los pagos internacionales, comuníquese con <a href=\"mailto:support@e4erelief.example\" class=\"font-semibold text-white hover:underline\">support@e4erelief.example</a>.",
+    "intlPartnersTitle": "Guías de Socios de Pago",
+    "converaGuide": "Guía de Convera",
+    "tipaltiGuide": "Guía de Tipalti"
+  }
+}
