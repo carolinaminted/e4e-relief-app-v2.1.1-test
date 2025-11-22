@@ -25,21 +25,17 @@ const AIApplyPreviewModal: React.FC<AIApplyPreviewModalProps> = ({ onClose, chil
                 onClick={(e) => e.stopPropagation()}
                 style={{ backgroundColor: 'var(--theme-bg-primary)', borderColor: 'var(--theme-border)' }}
             >
-                <header className="flex justify-between items-center border-b border-[var(--theme-border)] p-4 flex-shrink-0">
-                    <h2 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[var(--theme-gradient-start)] to-[var(--theme-gradient-end)] brightness-125">
-                        {t('aiApplyPage.progressTitle')}
-                    </h2>
-                    <button 
-                        onClick={onClose}
-                        className="text-gray-400 hover:text-white"
-                        aria-label="Close modal"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                </header>
-                <div className="flex-1 flex flex-col min-h-0">
+                <button 
+                    onClick={onClose}
+                    className="absolute top-2 right-2 text-gray-400 hover:text-white z-10 p-2 bg-black/20 rounded-full backdrop-blur-sm"
+                    aria-label="Close modal"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                
+                <div className="flex-1 flex flex-col min-h-0 overflow-hidden rounded-t-lg">
                      {children}
                 </div>
                 <footer className="p-4 border-t border-[var(--theme-border)] flex-shrink-0">

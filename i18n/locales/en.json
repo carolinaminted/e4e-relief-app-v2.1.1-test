@@ -1,4 +1,3 @@
-
 {
   "common": {
     "next": "Next",
@@ -97,7 +96,7 @@
     "title": "AI Apply",
     "backToHome": "Back to Home",
     "greeting": "Hello! Review the application questions and let me know about your situation. We are here to help!",
-    "progressTitle": "Application Progress",
+    "progressTitle": "Application Questions",
     "additionalDetailsPreviewTitle": "Additional Details",
     "profileAcknowledgementsPreviewTitle": "Profile Acknowledgements",
     "eventDetailsPreviewTitle": "Event Details",

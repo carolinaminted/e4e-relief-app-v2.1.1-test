@@ -1,4 +1,3 @@
-
 {
   "common": {
     "next": "Siguiente",
@@ -97,7 +96,7 @@
     "title": "Solicitud con IA",
     "backToHome": "Volver a Inicio",
     "greeting": "¡Hola! Revisa las preguntas de la solicitud y déjame saber sobre tu situación. ¡Estamos aquí para ayudar!",
-    "progressTitle": "Progreso de la Solicitud",
+    "progressTitle": "Preguntas de la Solicitud",
     "additionalDetailsPreviewTitle": "Detalles Adicionales",
     "profileAcknowledgementsPreviewTitle": "Confirmación de Perfil",
     "eventDetailsPreviewTitle": "Detalles del Evento",
