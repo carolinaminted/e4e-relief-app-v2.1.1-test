@@ -59,11 +59,6 @@ const FundPortalPage: React.FC<FundPortalPageProps> = ({ navigate, user }) => {
     <div className="flex-1 flex flex-col p-4 md:p-8">
       <div className="max-w-5xl mx-auto w-full">
         <div className="relative flex justify-center items-center mb-8">
-          <button onClick={() => navigate('home')} className="absolute left-0 text-[var(--theme-accent)] hover:opacity-80 transition-opacity" aria-label="Back to Home">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
-            </svg>
-          </button>
           <div className="text-center">
             <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[var(--theme-gradient-start)] to-[var(--theme-gradient-end)]">
                 Fund Portal
