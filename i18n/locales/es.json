@@ -90,7 +90,37 @@
     "title": "Inicio",
     "poweredBy": "Impulsado por E4E Relief",
     "applyTooltipVerification": "Se requiere verificación de clase para acceder a las solicitudes.",
-    "applyTooltipLimits": "Has alcanzado los límites de tu subvención."
+    "applyTooltipLimits": "Has alcanzado los límites de tu subvención.",
+    "welcomeTitle": "Bienvenido a E4E Relief",
+    "welcomeSubtitle": "Asistencia financiera rápida, segura y compasiva cuando más la necesitas.",
+    "defaultDescription": "E4E Relief otorga subvenciones a empleados que experimentan dificultades. Verifica tu código de fondo para ver los detalles específicos del programa.",
+    "applyNow": "Solicitar Ayuda",
+    "checkEligibility": "Verificar Elegibilidad",
+    "aboutSection": "Sobre el Fondo",
+    "coveredSection": "¿Qué está cubierto?",
+    "eligibilityTitle": "Elegibilidad",
+    "grantLimitsTitle": "Límites de Subvención",
+    "locationLabel": "Ubicación",
+    "employmentTypesLabel": "Empleados Elegibles",
+    "twelveMonthMaxLabel": "Máximo de 12 Meses",
+    "lifetimeMaxLabel": "Máximo de por Vida"
+  },
+  "fundContent": {
+    "DOM": {
+      "title": "Fondo de Ayuda Blastoise",
+      "subtitle": "Capeando la tormenta, juntos.",
+      "description": "El Fondo de Ayuda Blastoise se dedica a ayudar a nuestra comunidad a recuperarse de desastres graves relacionados con el agua y daños estructurales. Brindamos asistencia financiera rápida para ayudarte a reconstruir y recuperarte."
+    },
+    "ROST": {
+      "title": "Fondo de Ayuda Charizard",
+      "subtitle": "Resurgiendo de las cenizas.",
+      "description": "Cuando el calor y el fuego amenazan nuestros hogares, el Fondo de Ayuda Charizard interviene. Ofrecemos apoyo inmediato para la recuperación de incendios forestales y otras emergencias críticas para ayudarte a recuperarte."
+    },
+    "SSO": {
+      "title": "Fondo de Ayuda Venusaur",
+      "subtitle": "Cultivando estabilidad y crecimiento.",
+      "description": "El Fondo de Ayuda Venusaur apoya a los empleados que enfrentan dificultades naturales y desafíos de la vida. Desde problemas de estabilidad del suelo hasta el bienestar personal, estamos aquí para ayudarte a crecer a través de la adversidad."
+    }
   },
   "aiApplyPage": {
     "title": "Solicitud con IA",

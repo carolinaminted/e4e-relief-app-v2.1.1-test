@@ -1,4 +1,3 @@
-
 import React, { useState, useCallback, useMemo, useEffect, useRef } from 'react';
 import type { User, IdTokenResult } from 'firebase/auth';
 // FIX: Import the centralized Page type and alias it to avoid naming conflicts. Also added forgotPassword page.
@@ -961,7 +960,7 @@ function App() {
        case 'tokenUsage':
         return <TokenUsagePage navigate={navigate} currentUser={currentUser} />;
       case 'submissionSuccess':
-        if (!lastSubmittedApp) return <HomePage navigate={navigate} canApply={canApply} userProfile={currentUser} />;
+        if (!lastSubmittedApp) return <HomePage navigate={navigate} canApply={canApply} userProfile={currentUser} activeFund={activeFund} />;
         return <SubmissionSuccessPage application={lastSubmittedApp} onGoToProfile={() => setPage('profile')} />;
       case 'faq':
         return <FAQPage navigate={navigate} />;
@@ -991,7 +990,7 @@ function App() {
                 />;
       case 'home':
       default:
-        return <HomePage navigate={navigate} canApply={canApply} userProfile={currentUser} />;
+        return <HomePage navigate={navigate} canApply={canApply} userProfile={currentUser} activeFund={activeFund} />;
     }
   };
   

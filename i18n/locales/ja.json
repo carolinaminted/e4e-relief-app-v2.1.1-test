@@ -90,7 +90,37 @@
     "title": "ホーム",
     "poweredBy": "Powered by E4E Relief",
     "applyTooltipVerification": "申請にアクセスするにはクラス確認が必要です。",
-    "applyTooltipLimits": "助成金の上限に達しました。"
+    "applyTooltipLimits": "助成金の上限に達しました。",
+    "welcomeTitle": "E4E Reliefへようこそ",
+    "welcomeSubtitle": "最も必要なときに、迅速、安全、そして思いやりのある経済的支援を提供します。",
+    "defaultDescription": "E4E Reliefは、困難に直面している従業員に助成金を提供します。特定のプログラムの詳細を確認するには、基金コードを確認してください。",
+    "applyNow": "救援を申請",
+    "checkEligibility": "資格を確認",
+    "aboutSection": "基金について",
+    "coveredSection": "対象範囲",
+    "eligibilityTitle": "資格",
+    "grantLimitsTitle": "助成金の上限",
+    "locationLabel": "場所",
+    "employmentTypesLabel": "対象従業員",
+    "twelveMonthMaxLabel": "12ヶ月の上限",
+    "lifetimeMaxLabel": "生涯の上限"
+  },
+  "fundContent": {
+    "DOM": {
+      "title": "Blastoise 救援基金",
+      "subtitle": "嵐を共に乗り越える。",
+      "description": "Blastoise 救援基金は、深刻な水害や構造的被害からのコミュニティの回復を支援することに専念しています。再建と回復を支援するための迅速な経済的支援を提供します。"
+    },
+    "ROST": {
+      "title": "Charizard 救援基金",
+      "subtitle": "灰の中から立ち上がる。",
+      "description": "熱と火が私たちの家を脅かすとき、Charizard 救援基金が介入します。山火事からの回復やその他の重大な緊急事態に対して、立ち直るための即時の支援を提供します。"
+    },
+    "SSO": {
+      "title": "Venusaur 救援基金",
+      "subtitle": "安定と成長を育む。",
+      "description": "Venusaur 救援基金は、自然災害や人生の課題に直面している従業員を支援します。地盤の安定性の問題から個人の幸福まで、逆境を通じて成長できるようお手伝いします。"
+    }
   },
   "aiApplyPage": {
     "title": "AI申請",

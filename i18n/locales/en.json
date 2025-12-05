@@ -90,7 +90,37 @@
     "title": "Home",
     "poweredBy": "Powered by E4E Relief",
     "applyTooltipVerification": "Class Verification required to access applications.",
-    "applyTooltipLimits": "Your grant limits have been reached."
+    "applyTooltipLimits": "Your grant limits have been reached.",
+    "welcomeTitle": "Welcome to E4E Relief",
+    "welcomeSubtitle": "Fast, secure, and compassionate financial assistance when you need it most.",
+    "defaultDescription": "E4E Relief provides grants to employees experiencing hardships. Please verify your fund code to see specific program details.",
+    "applyNow": "Apply for Relief",
+    "checkEligibility": "Check Eligibility",
+    "aboutSection": "About the Fund",
+    "coveredSection": "What is Covered?",
+    "eligibilityTitle": "Eligibility",
+    "grantLimitsTitle": "Grant Limits",
+    "locationLabel": "Location",
+    "employmentTypesLabel": "Eligible Employees",
+    "twelveMonthMaxLabel": "12-Month Maximum",
+    "lifetimeMaxLabel": "Lifetime Maximum"
+  },
+  "fundContent": {
+    "DOM": {
+      "title": "Blastoise Relief Fund",
+      "subtitle": "Weathering the storm, together.",
+      "description": "The Blastoise Relief Fund is dedicated to helping our community recover from severe water-related disasters and structural damage. We provide rapid financial assistance to help you rebuild and recover."
+    },
+    "ROST": {
+      "title": "Charizard Relief Fund",
+      "subtitle": "Rising from the ashes.",
+      "description": "When heat and fire threaten our homes, the Charizard Relief Fund steps in. We offer immediate support for wildfire recovery and other critical emergencies to help you get back on your feet."
+    },
+    "SSO": {
+      "title": "Venusaur Relief Fund",
+      "subtitle": "Cultivating stability and growth.",
+      "description": "The Venusaur Relief Fund supports employees facing natural hardships and life challenges. From ground stability issues to personal well-being, we are here to help you grow through adversity."
+    }
   },
   "aiApplyPage": {
     "title": "AI Apply",
