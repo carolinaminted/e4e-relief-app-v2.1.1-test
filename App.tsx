@@ -88,11 +88,10 @@ function App() {
             setApplications(userApps);
         });
         
-        if (claims.admin) {
-            proxyApplicationsUnsubscribe = applicationsRepo.listenForProxySubmissions(user.uid, (proxyApps) => {
-                setProxyApplications(proxyApps);
-            });
-        }
+        // Listen for proxy submissions for ALL users, effectively enabling the feature for everyone.
+        proxyApplicationsUnsubscribe = applicationsRepo.listenForProxySubmissions(user.uid, (proxyApps) => {
+            setProxyApplications(proxyApps);
+        });
 
         profileUnsubscribe = usersRepo.listen(user.uid, async (profile) => {
           if (profile) {
@@ -279,7 +278,8 @@ function App() {
             'ticketing',
             'programDetails',
             'proxy',
-            'tokenUsage'
+            'tokenUsage',
+            'reliefQueue'
         ];
         if (themedPages.includes(page) && activeFund && fundThemes[activeFund.code]) {
             targetTheme = fundThemes[activeFund.code];
@@ -303,7 +303,7 @@ function App() {
   }, [currentUser, applications, activeIdentity]);
   
   const userProxyApplications = useMemo(() => {
-    if (currentUser?.role === 'Admin' && activeIdentity) {
+    if (currentUser && activeIdentity) {
       return proxyApplications.filter(app => app.profileSnapshot.fundCode === activeIdentity.fundCode) || [];
     }
     return [];
@@ -417,7 +417,9 @@ function App() {
             'classVerification', 
             'reliefQueue', 
             'profile', 
-            'eligibility'
+            'eligibility',
+            // Allow access to fund portal pages even if not fully verified/eligible
+            'fundPortal', 'liveDashboard', 'ticketing', 'programDetails', 'proxy', 'tokenUsage'
         ];
         
         if (!allowedIneligiblePages.includes(targetPage)) {
@@ -653,8 +655,8 @@ function App() {
   }, [currentUser, handleProfileUpdate, activeFund, twelveMonthRemaining, lifetimeRemaining]);
   
   const handleProxyApplicationSubmit = useCallback(async (appFormData: ApplicationFormData) => {
-    if (!currentUser || authState.claims.admin !== true || !activeFund) {
-        console.error("Only admins with an active fund can submit proxy applications.");
+    if (!currentUser || !activeFund) {
+        console.error("Cannot submit proxy application without an active fund context.");
         return;
     };
 
@@ -742,7 +744,7 @@ function App() {
     setApplicationDraft(null);
     setLastSubmittedApp(newApplication);
     setPage('submissionSuccess');
-  }, [currentUser, authState.claims.admin, activeFund]);
+  }, [currentUser, activeFund]);
 
   const handleDraftUpdate = useCallback((partialDraft: {
       profileData?: Partial<UserProfile>;
@@ -1007,7 +1009,7 @@ function App() {
   // Relief Queue view (special logged-in state without nav)
   if (page === 'reliefQueue') {
     return (
-        <div className="bg-[#003a70] text-white h-screen font-sans flex flex-col" style={{ backgroundColor: 'var(--theme-bg-primary)' }}>
+        <div className="bg-[var(--theme-bg-primary)] text-white h-screen font-sans flex flex-col" style={{ backgroundColor: 'var(--theme-bg-primary)' }}>
             <IconDefs />
             <main ref={mainRef} className="flex-1 flex flex-col overflow-y-auto">
                 <SessionTimeoutHandler onLogout={handleLogout} isActive={true}>

@@ -70,14 +70,12 @@ const BottomNavBar: React.FC<BottomNavBarProps> = ({ navigate, currentPage, user
             onClick={() => navigate('support')}
             isActive={currentPage === 'support'}
         />
-        {userRole === 'Admin' && (
-            <NavItem
-                label={t('nav.fundPortal')}
-                icon={<DashboardIcon className="h-6 w-6" />}
-                onClick={() => navigate('fundPortal')}
-                isActive={['fundPortal', 'proxy', 'ticketing', 'tokenUsage', 'programDetails', 'liveDashboard'].includes(currentPage)}
-            />
-        )}
+        <NavItem
+            label={t('nav.fundPortal')}
+            icon={<DashboardIcon className="h-6 w-6" />}
+            onClick={() => navigate('fundPortal')}
+            isActive={['fundPortal', 'proxy', 'ticketing', 'tokenUsage', 'programDetails', 'liveDashboard'].includes(currentPage)}
+        />
       </div>
     </nav>
   );

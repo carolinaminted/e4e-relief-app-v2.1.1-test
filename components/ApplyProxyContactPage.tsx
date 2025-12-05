@@ -1,3 +1,4 @@
+
 import React, { useState, useMemo, useRef, useLayoutEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { UserProfile, Address, ApplicationFormData } from '../types';
@@ -296,20 +297,6 @@ const ApplyProxyContactPage: React.FC<ApplyProxyContactPageProps> = ({ formData,
                         <FormInput label="Applicant's Email" id="applicantEmail" type="email" required value={formData.email} onChange={e => handleFormUpdate({ email: e.target.value })} error={errors.email} />
                     </div>
                 </div>
-                {openSection === 'applicantDetails' && (
-                    <div className="flex justify-end pt-4">
-                        <button
-                            type="button"
-                            onClick={() => toggleSection('applicantDetails')}
-                            className="flex items-center text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[var(--theme-gradient-start)] to-[var(--theme-gradient-end)] hover:opacity-80 transition-opacity"
-                        >
-                            {t('applyContactPage.collapse')}
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 text-[var(--theme-accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-                            </svg>
-                        </button>
-                    </div>
-                )}
             </div>
         </fieldset>
         
@@ -325,22 +312,22 @@ const ApplyProxyContactPage: React.FC<ApplyProxyContactPageProps> = ({ formData,
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-6 pt-4">
                     <div className="grid grid-cols-5 gap-x-4">
                         <div className="col-span-3">
-                            <FormInput label={t('applyContactPage.firstName')} id="firstName" required value={formData.firstName} disabled />
+                            <FormInput label="First Name" id="firstName" required value={formData.firstName} disabled />
                         </div>
                         <div className="col-span-2">
-                             <FormInput label={t('applyContactPage.middleName')} id="middleName" value={formData.middleName || ''} onChange={e => handleFormUpdate({ middleName: e.target.value })} />
+                             <FormInput label="Middle Name(s)" id="middleName" value={formData.middleName || ''} onChange={e => handleFormUpdate({ middleName: e.target.value })} />
                         </div>
                     </div>
                     <div className="grid grid-cols-5 gap-x-4">
                         <div className="col-span-3">
-                            <FormInput label={t('applyContactPage.lastName')} id="lastName" required value={formData.lastName} disabled />
+                            <FormInput label="Last Name" id="lastName" required value={formData.lastName} disabled />
                         </div>
                         <div className="col-span-2">
-                            <FormInput label={t('applyContactPage.suffix')} id="suffix" value={formData.suffix || ''} onChange={e => handleFormUpdate({ suffix: e.target.value })} />
+                            <FormInput label="Suffix" id="suffix" value={formData.suffix || ''} onChange={e => handleFormUpdate({ suffix: e.target.value })} />
                         </div>
                     </div>
-                    <FormInput label={t('applyContactPage.email')} id="email" required value={formData.email} disabled />
-                    <FormInput label={t('applyContactPage.mobileNumber')} id="mobileNumber" required value={formData.mobileNumber} onChange={e => handleFormUpdate({ mobileNumber: e.target.value })} error={errors.mobileNumber} placeholder={t('applyContactPage.mobileNumberPlaceholder')} />
+                    <FormInput label="Email" id="email" required value={formData.email} disabled />
+                    <FormInput label="Mobile Number" id="mobileNumber" required value={formData.mobileNumber} onChange={e => handleFormUpdate({ mobileNumber: e.target.value })} error={errors.mobileNumber} placeholder="(555) 555-5555" />
                 </div>
                 {openSection === 'contact' && (
                     <div className="flex justify-end pt-4">
@@ -393,7 +380,7 @@ const ApplyProxyContactPage: React.FC<ApplyProxyContactPageProps> = ({ formData,
                                             </button>
                                         )}
                                     </div>
-                                    <AddressFields forUser={formData} address={formData.primaryAddress} onUpdate={(field, value) => handleAddressChange('primaryAddress', field, value)} onBulkUpdate={(parsed) => handleAddressBulkChange('primaryAddress', parsed)} prefix="primary" errors={errors.primaryAddress || {}} />
+                                    <AddressFields forUser={formData} address={formData.primaryAddress} onUpdate={(field, value) => handleAddressChange('primaryAddress', field, value)} onBulkUpdate={(parsed) => handleAddressBulkChange('primaryAddress', parsed)} prefix="primary" errors={errors.primaryAddress || {}} showAIHelper={false} />
                                 </div>
                             </div>
                             <div className="flip-back" ref={backRef}>
@@ -404,7 +391,7 @@ const ApplyProxyContactPage: React.FC<ApplyProxyContactPageProps> = ({ formData,
                                             {t('profilePage.viewPrimaryAddress')}
                                         </button>
                                     </div>
-                                    <AddressFields forUser={formData} address={formData.mailingAddress || { country: '', street1: '', city: '', state: '', zip: '' }} onUpdate={(field, value) => handleAddressChange('mailingAddress', field, value)} onBulkUpdate={(parsed) => handleAddressBulkChange('mailingAddress', parsed)} prefix="mailing" errors={errors.mailingAddress || {}} />
+                                    <AddressFields forUser={formData} address={formData.mailingAddress || { country: '', street1: '', city: '', state: '', zip: '' }} onUpdate={(field, value) => handleAddressChange('mailingAddress', field, value)} onBulkUpdate={(parsed) => handleAddressBulkChange('mailingAddress', parsed)} prefix="mailing" errors={errors.mailingAddress || {}} showAIHelper={false} />
                                 </div>
                             </div>
                         </div>

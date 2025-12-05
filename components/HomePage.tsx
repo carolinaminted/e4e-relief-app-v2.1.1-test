@@ -56,33 +56,21 @@ const HomePage: React.FC<HomePageProps> = ({ navigate, canApply, userProfile }) 
             disabled: !isFullyEligible,
             disabledTooltipKey: "homePage.applyTooltipVerification"
         },
-        
-    ];
-
-    if (userProfile.role === 'Admin') {
-        tiles.push({ 
+        { 
             key: 'fundPortal', 
             titleKey: 'nav.fundPortal', 
             icon: <DashboardIcon className="h-9 w-9 sm:h-12 sm:w-12 mb-2 sm:mb-4" />, 
             onClick: () => navigate('fundPortal'),
-        });
-         tiles.push({ 
+        },
+        { 
              key: 'donate', 
              titleKey: 'nav.donate', 
              icon: <DonateIcon className="h-9 w-9 sm:h-12 sm:w-12 mb-2 sm:mb-4" />, 
-             onClick: () => navigate('donate')
-        });
-    } else {
-        tiles.push({ 
-            key: 'donate', 
-            titleKey: 'nav.donate', 
-            icon: <DonateIcon className="h-9 w-9 sm:h-12 sm:w-12 mb-2 sm:mb-4" />, 
-            colSpan: 'col-span-2', 
-            onClick: () => navigate('donate'),
-            disabled: !isFullyEligible,
-            disabledTooltipKey: "homePage.applyTooltipVerification"
-        });
-    }
+             onClick: () => navigate('donate'),
+             disabled: !isFullyEligible,
+             disabledTooltipKey: "homePage.applyTooltipVerification"
+        }
+    ];
 
   return (
     <>

@@ -19,8 +19,14 @@ const nukeServiceWorkers = async () => {
           await registration.unregister();
           reloadNeeded = true;
         }
-      } catch (err) {
-        console.warn('SW Kill Switch encountered an error:', err);
+      } catch (err: any) {
+        // Ignore "invalid state" errors which happen in some restricted environments 
+        // (like sandboxed iframes) when accessing service workers.
+        if (err?.message?.includes('invalid state') || err?.name === 'InvalidStateError') {
+             console.debug('SW Kill Switch: Service Workers not accessible in this environment.');
+        } else {
+             console.warn('SW Kill Switch encountered an error:', err);
+        }
       }
     }
 

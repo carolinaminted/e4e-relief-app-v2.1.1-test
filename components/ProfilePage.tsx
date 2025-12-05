@@ -574,7 +574,14 @@ const ProfilePage: React.FC<ProfilePageProps> = ({ navigate, applications, userP
                                             </button>
                                         )}
                                     </div>
-                                    <AddressFields address={formData.primaryAddress} onUpdate={(field, value) => handleAddressChange('primaryAddress', field, value)} onBulkUpdate={(parsed) => handleAddressBulkChange('primaryAddress', parsed)} prefix="primary" errors={errors.primaryAddress || {}} />
+                                    <AddressFields 
+                                        address={formData.primaryAddress} 
+                                        onUpdate={(field, value) => handleAddressChange('primaryAddress', field, value)} 
+                                        onBulkUpdate={(parsed) => handleAddressBulkChange('primaryAddress', parsed)} 
+                                        prefix="primary" 
+                                        errors={errors.primaryAddress || {}} 
+                                        showAIHelper={false} 
+                                    />
                                 </div>
                             </div>
                             <div className="flip-back" ref={backRef}>
@@ -585,7 +592,14 @@ const ProfilePage: React.FC<ProfilePageProps> = ({ navigate, applications, userP
                                             {t('profilePage.viewPrimaryAddress')}
                                         </button>
                                     </div>
-                                    <AddressFields address={formData.mailingAddress || { country: '', street1: '', city: '', state: '', zip: '' }} onUpdate={(field, value) => handleAddressChange('mailingAddress', field, value)} onBulkUpdate={(parsed) => handleAddressBulkChange('mailingAddress', parsed)} prefix="mailing" errors={errors.mailingAddress || {}} />
+                                    <AddressFields 
+                                        address={formData.mailingAddress || { country: '', street1: '', city: '', state: '', zip: '' }} 
+                                        onUpdate={(field, value) => handleAddressChange('mailingAddress', field, value)} 
+                                        onBulkUpdate={(parsed) => handleAddressBulkChange('mailingAddress', parsed)} 
+                                        prefix="mailing" 
+                                        errors={errors.mailingAddress || {}} 
+                                        showAIHelper={false} 
+                                    />
                                 </div>
                             </div>
                         </div>

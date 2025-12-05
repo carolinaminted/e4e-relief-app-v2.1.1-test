@@ -1,3 +1,4 @@
+
 import React, { useState, useMemo, useEffect, useRef, useLayoutEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { UserProfile, Address, ApplicationFormData } from '../types';
@@ -365,7 +366,7 @@ const ApplyContactPage: React.FC<ApplyContactPageProps> = ({ formData, updateFor
                                             </button>
                                         )}
                                     </div>
-                                    <AddressFields forUser={formData} address={formData.primaryAddress} onUpdate={(field, value) => handleAddressChange('primaryAddress', field, value)} onBulkUpdate={(parsed) => handleAddressBulkChange('primaryAddress', parsed)} prefix="primary" errors={errors.primaryAddress || {}} />
+                                    <AddressFields forUser={formData} address={formData.primaryAddress} onUpdate={(field, value) => handleAddressChange('primaryAddress', field, value)} onBulkUpdate={(parsed) => handleAddressBulkChange('primaryAddress', parsed)} prefix="primary" errors={errors.primaryAddress || {}} showAIHelper={false} />
                                 </div>
                             </div>
                             <div className="flip-back" ref={backRef}>
@@ -376,7 +377,7 @@ const ApplyContactPage: React.FC<ApplyContactPageProps> = ({ formData, updateFor
                                             {t('profilePage.viewPrimaryAddress')}
                                         </button>
                                     </div>
-                                    <AddressFields forUser={formData} address={formData.mailingAddress || { country: '', street1: '', city: '', state: '', zip: '' }} onUpdate={(field, value) => handleAddressChange('mailingAddress', field, value)} onBulkUpdate={(parsed) => handleAddressBulkChange('mailingAddress', parsed)} prefix="mailing" errors={errors.mailingAddress || {}} />
+                                    <AddressFields forUser={formData} address={formData.mailingAddress || { country: '', street1: '', city: '', state: '', zip: '' }} onUpdate={(field, value) => handleAddressChange('mailingAddress', field, value)} onBulkUpdate={(parsed) => handleAddressBulkChange('mailingAddress', parsed)} prefix="mailing" errors={errors.mailingAddress || {}} showAIHelper={false} />
                                 </div>
                             </div>
                         </div>

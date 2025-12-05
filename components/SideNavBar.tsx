@@ -65,15 +65,13 @@ const SideNavBar: React.FC<SideNavBarProps> = ({ navigate, currentPage, userRole
     { page: 'aiApply', labelKey: 'nav.aiApply', icon: <SparklesIcon className="h-6 w-6" />, disabled: !canApply },
     { page: 'support', labelKey: 'nav.support', icon: <SupportIcon className="h-6 w-6" />, disabled: !isVerifiedAndEligible },
     { page: 'donate', labelKey: 'nav.donate', icon: <DonateIcon className="h-6 w-6" />, disabled: !isVerifiedAndEligible },
+    { page: 'fundPortal', labelKey: 'nav.fundPortal', icon: <DashboardIcon className="h-6 w-6" /> }
   ];
 
   const navItems = [...baseNavItems];
-  if (userRole === 'Admin') {
-    navItems.push({ page: 'fundPortal', labelKey: 'nav.fundPortal', icon: <DashboardIcon className="h-6 w-6" /> });
-  }
 
   const adminDashboardPages: Page[] = ['fundPortal', 'proxy', 'ticketing', 'tokenUsage', 'programDetails', 'liveDashboard'];
-  const activePage = userRole === 'Admin' && adminDashboardPages.includes(currentPage) ? 'fundPortal' : currentPage;
+  const activePage = adminDashboardPages.includes(currentPage) ? 'fundPortal' : currentPage;
 
 
   return (
