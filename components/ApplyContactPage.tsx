@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo, useEffect, useRef, useLayoutEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { UserProfile, Address, ApplicationFormData } from '../types';
@@ -418,8 +417,10 @@ const ApplyContactPage: React.FC<ApplyContactPageProps> = ({ formData, updateFor
                             error={errors.eligibilityType}
                         />
                     </div>
-                    <FormInput type="number" label={t('applyContactPage.householdIncome')} id="householdIncome" required value={formData.householdIncome} onChange={e => handleFormUpdate({ householdIncome: parseFloat(e.target.value) || '' })} error={errors.householdIncome} />
-                    <FormInput type="number" label={t('applyContactPage.householdSize')} id="householdSize" required value={formData.householdSize} onChange={e => handleFormUpdate({ householdSize: parseInt(e.target.value, 10) || '' })} error={errors.householdSize} />
+                    <div className="grid grid-cols-2 gap-6">
+                        <FormInput type="number" label={t('applyContactPage.householdIncome')} id="householdIncome" required value={formData.householdIncome} onChange={e => handleFormUpdate({ householdIncome: parseFloat(e.target.value) || '' })} error={errors.householdIncome} />
+                        <FormInput type="number" label={t('applyContactPage.householdSize')} id="householdSize" required value={formData.householdSize} onChange={e => handleFormUpdate({ householdSize: parseInt(e.target.value, 10) || '' })} error={errors.householdSize} />
+                    </div>
                     <div className="grid grid-cols-2 gap-6">
                         <FormRadioGroup legend={t('applyContactPage.homeowner')} name="homeowner" options={[yes, no]} value={formData.homeowner === 'Yes' ? yes : formData.homeowner === 'No' ? no : ''} onChange={value => handleFormUpdate({ homeowner: value === yes ? 'Yes' : 'No' })} required error={errors.homeowner} />
                         <SearchableSelector

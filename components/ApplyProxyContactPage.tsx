@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo, useRef, useLayoutEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { UserProfile, Address, ApplicationFormData } from '../types';
@@ -329,24 +328,9 @@ const ApplyProxyContactPage: React.FC<ApplyProxyContactPageProps> = ({ formData,
                     <FormInput label="Email" id="email" required value={formData.email} disabled />
                     <FormInput label="Mobile Number" id="mobileNumber" required value={formData.mobileNumber} onChange={e => handleFormUpdate({ mobileNumber: e.target.value })} error={errors.mobileNumber} placeholder="(555) 555-5555" />
                 </div>
-                {openSection === 'contact' && (
-                    <div className="flex justify-end pt-4">
-                        <button
-                            type="button"
-                            onClick={() => toggleSection('contact')}
-                            className="flex items-center text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[var(--theme-gradient-start)] to-[var(--theme-gradient-end)] hover:opacity-80 transition-opacity"
-                        >
-                            {t('applyContactPage.collapse')}
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 text-[var(--theme-accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-                            </svg>
-                        </button>
-                    </div>
-                )}
             </div>
         </fieldset>
 
-        {/* 1b Addresses */}
         <fieldset className="border-b border-[var(--theme-border)] pb-4">
             <button type="button" onClick={() => toggleSection('addresses')} className="w-full flex justify-between items-center text-left py-2" aria-expanded={openSection === 'addresses'} aria-controls="address-section">
                 <div className="flex items-center gap-3">
@@ -358,25 +342,17 @@ const ApplyProxyContactPage: React.FC<ApplyProxyContactPageProps> = ({ formData,
             <div id="address-section" className={`transition-all duration-500 ease-in-out ${openSection === 'addresses' ? 'max-h-[2000px] opacity-100 mt-4 overflow-visible' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                 <div className="pt-4" aria-live="polite">
                     <div className="mb-6">
-                        <FormRadioGroup 
-                            legend={t('profilePage.mailingAddressSame')} 
-                            name="isMailingAddressSame" 
-                            options={[yes, no]} 
-                            value={formData.isMailingAddressSame === null ? '' : (formData.isMailingAddressSame ? yes : no)} 
-                            onChange={value => handleFormUpdate({ isMailingAddressSame: value === yes })} 
-                            required 
-                            error={errors.isMailingAddressSame} 
-                        />
+                        <FormRadioGroup legend="Mailing Address Same as Primary?" name="isMailingAddressSame" options={[yes, no]} value={formData.isMailingAddressSame === null ? '' : (formData.isMailingAddressSame ? yes : no)} onChange={value => handleFormUpdate({ isMailingAddressSame: value === yes })} required error={errors.isMailingAddressSame} />
                     </div>
                     <div className="flip-container">
                         <div className={`flipper ${!formData.isMailingAddressSame && showMailingAddress ? 'is-flipped' : ''}`} style={{ height: cardHeight ? `${cardHeight}px` : 'auto' }}>
                             <div className="flip-front" ref={frontRef}>
                                 <div className="space-y-6">
                                     <div className="flex justify-between items-center">
-                                        <h3 className="text-lg font-semibold text-white">{t('profilePage.primaryAddressTitle')}</h3>
+                                        <h3 className="text-lg font-semibold text-white">Primary Address</h3>
                                         {!formData.isMailingAddressSame && (
                                             <button type="button" onClick={() => setShowMailingAddress(true)} className="text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[var(--theme-gradient-start)] to-[var(--theme-gradient-end)] hover:opacity-80 transition-opacity">
-                                                {t('profilePage.viewMailingAddress')}
+                                                View Mailing Address
                                             </button>
                                         )}
                                     </div>
@@ -386,9 +362,9 @@ const ApplyProxyContactPage: React.FC<ApplyProxyContactPageProps> = ({ formData,
                             <div className="flip-back" ref={backRef}>
                                  <div className="space-y-6">
                                     <div className="flex justify-between items-center">
-                                        <h3 className="text-lg font-semibold text-white">{t('profilePage.mailingAddressTitle')}</h3>
+                                        <h3 className="text-lg font-semibold text-white">Mailing Address</h3>
                                         <button type="button" onClick={() => setShowMailingAddress(false)} className="text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[var(--theme-gradient-start)] to-[var(--theme-gradient-end)] hover:opacity-80 transition-opacity">
-                                            {t('profilePage.viewPrimaryAddress')}
+                                            View Primary Address
                                         </button>
                                     </div>
                                     <AddressFields forUser={formData} address={formData.mailingAddress || { country: '', street1: '', city: '', state: '', zip: '' }} onUpdate={(field, value) => handleAddressChange('mailingAddress', field, value)} onBulkUpdate={(parsed) => handleAddressBulkChange('mailingAddress', parsed)} prefix="mailing" errors={errors.mailingAddress || {}} showAIHelper={false} />
@@ -397,18 +373,9 @@ const ApplyProxyContactPage: React.FC<ApplyProxyContactPageProps> = ({ formData,
                         </div>
                     </div>
                 </div>
-                {openSection === 'addresses' && (
-                    <div className="flex justify-end pt-4">
-                        <button type="button" onClick={() => toggleSection('addresses')} className="flex items-center text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[var(--theme-gradient-start)] to-[var(--theme-gradient-end)] hover:opacity-80 transition-opacity">
-                            {t('profilePage.collapse')}
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 text-[var(--theme-accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" /></svg>
-                        </button>
-                    </div>
-                )}
             </div>
         </fieldset>
 
-        {/* 1c Additional Details */}
         <fieldset className="border-b border-[var(--theme-border)] pb-4">
             <button type="button" onClick={() => toggleSection('additionalDetails')} className="w-full flex justify-between items-center text-left py-2" aria-expanded={openSection === 'additionalDetails'} aria-controls="details-section">
                 <div className="flex items-center gap-3">
@@ -420,101 +387,60 @@ const ApplyProxyContactPage: React.FC<ApplyProxyContactPageProps> = ({ formData,
             <div id="details-section" className={`transition-all duration-500 ease-in-out ${openSection === 'additionalDetails' ? 'max-h-[1000px] opacity-100 mt-4 overflow-visible' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                 <div className="space-y-6 pt-4">
                     <div className="grid grid-cols-2 gap-6">
-                        <FormInput type="date" label={t('applyContactPage.employmentStartDate')} id="employmentStartDate" required value={formData.employmentStartDate} onChange={e => handleFormUpdate({ employmentStartDate: e.target.value })} error={errors.employmentStartDate} />
-                        <SearchableSelector
-                            label={t('applyContactPage.eligibilityType')}
-                            id="eligibilityType"
-                            required
-                            value={formData.eligibilityType}
-                            options={employmentTypes}
-                            onUpdate={value => handleFormUpdate({ eligibilityType: value })}
-                            variant="underline"
-                            error={errors.eligibilityType}
-                        />
+                        <FormInput type="date" label="Employment Start Date" id="employmentStartDate" required value={formData.employmentStartDate} onChange={e => handleFormUpdate({ employmentStartDate: e.target.value })} error={errors.employmentStartDate} />
+                        <SearchableSelector label="Eligibility Type" id="eligibilityType" required value={formData.eligibilityType} options={employmentTypes} onUpdate={value => handleFormUpdate({ eligibilityType: value })} variant="underline" error={errors.eligibilityType} />
                     </div>
-                    <FormInput type="number" label={t('applyContactPage.householdIncome')} id="householdIncome" required value={formData.householdIncome} onChange={e => handleFormUpdate({ householdIncome: parseFloat(e.target.value) || '' })} error={errors.householdIncome} />
-                    <FormInput type="number" label={t('applyContactPage.householdSize')} id="householdSize" required value={formData.householdSize} onChange={e => handleFormUpdate({ householdSize: parseInt(e.target.value, 10) || '' })} error={errors.householdSize} />
+
                     <div className="grid grid-cols-2 gap-6">
-                        <FormRadioGroup legend={t('applyContactPage.homeowner')} name="homeowner" options={[yes, no]} value={formData.homeowner === 'Yes' ? yes : formData.homeowner === 'No' ? no : ''} onChange={value => handleFormUpdate({ homeowner: value === yes ? 'Yes' : 'No' })} required error={errors.homeowner} />
-                        <SearchableSelector
-                            label={t('applyContactPage.preferredLanguage')}
-                            id="preferredLanguage"
-                            value={formData.preferredLanguage || ''}
-                            options={languages}
-                            onUpdate={value => handleFormUpdate({ preferredLanguage: value })}
-                            variant="underline"
-                        />
+                        <FormInput type="number" label="Estimated Annual Household Income" id="householdIncome" required value={formData.householdIncome} onChange={e => handleFormUpdate({ householdIncome: parseFloat(e.target.value) || '' })} error={errors.householdIncome} />
+                        <FormInput type="number" label="Number of people in household" id="householdSize" required value={formData.householdSize} onChange={e => handleFormUpdate({ householdSize: parseInt(e.target.value, 10) || '' })} error={errors.householdSize} />
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-6">
+                        <FormRadioGroup legend="Do you own your own home?" name="homeowner" options={['Yes', 'No']} value={formData.homeowner} onChange={value => handleFormUpdate({ homeowner: value as 'Yes' | 'No' })} required error={errors.homeowner} />
+                        <SearchableSelector label="Preferred Language" id="preferredLanguage" value={formData.preferredLanguage || ''} options={languages} onUpdate={value => handleFormUpdate({ preferredLanguage: value })} variant="underline"/>
                     </div>
                 </div>
-                {openSection === 'additionalDetails' && (
-                    <div className="flex justify-end pt-4">
-                        <button
-                            type="button"
-                            onClick={() => toggleSection('additionalDetails')}
-                            className="flex items-center text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[var(--theme-gradient-start)] to-[var(--theme-gradient-end)] hover:opacity-80 transition-opacity"
-                        >
-                            {t('applyContactPage.collapse')}
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 text-[var(--theme-accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-                            </svg>
-                        </button>
-                    </div>
-                )}
             </div>
         </fieldset>
 
-        {/* 1e Consent and Acknowledgement */}
         <fieldset className="pb-4">
             <button type="button" onClick={() => toggleSection('consent')} className="w-full flex justify-between items-center text-left py-2" aria-expanded={openSection === 'consent'} aria-controls="consent-section">
                 <div className="flex items-center gap-3">
-                    <h2 className="text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[var(--theme-gradient-start)] to-[var(--theme-gradient-end)]">{t('applyContactPage.consentTitle')}</h2>
+                    <h2 className="text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[var(--theme-gradient-start)] to-[var(--theme-gradient-end)]">Consent & Acknowledgement</h2>
                     {sectionHasErrors.consent && openSection !== 'consent' && <NotificationIcon />}
                 </div>
                 <ChevronIcon isOpen={openSection === 'consent'} />
             </button>
-            <div id="consent-section" className={`transition-all duration-500 ease-in-out ${openSection === 'consent' ? 'max-h-[1000px] opacity-100 mt-4 overflow-visible' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+            <div className={`transition-all duration-500 ease-in-out ${openSection === 'consent' ? 'max-h-[1000px] opacity-100 mt-4 overflow-visible' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                 <div className="space-y-3 pt-4">
                     {errors.ackPolicies && <p className="text-red-400 text-xs">{errors.ackPolicies}</p>}
                     <div className="flex items-start">
-                        <input type="checkbox" id="ackPolicies" required checked={formData.ackPolicies} onChange={e => handleFormUpdate({ ackPolicies: e.target.checked })} className="h-4 w-4 text-[var(--theme-accent)] bg-gray-700 border-gray-600 rounded focus:ring-[var(--theme-accent)] mt-1" />
-                        <label htmlFor="ackPolicies" className="flex items-center ml-3 text-sm text-white">{t('applyContactPage.ackPolicies')} <RequiredIndicator required isMet={formData.ackPolicies} /></label>
+                        <input type="checkbox" id="ackPolicies" required checked={formData.ackPolicies} onChange={e => handleFormUpdate({ ackPolicies: e.target.checked })} className="h-4 w-4 text-[#ff8400] bg-gray-700 border-gray-600 rounded focus:ring-[#ff8400] mt-1" />
+                        <label htmlFor="ackPolicies" className="flex items-center ml-3 text-sm text-white">I have read and agree to E4E Relief’s Privacy Policy and Cookie Policy. <RequiredIndicator required isMet={formData.ackPolicies} /></label>
                     </div>
                     {errors.commConsent && <p className="text-red-400 text-xs">{errors.commConsent}</p>}
                     <div className="flex items-start">
-                        <input type="checkbox" id="commConsent" required checked={formData.commConsent} onChange={e => handleFormUpdate({ commConsent: e.target.checked })} className="h-4 w-4 text-[var(--theme-accent)] bg-gray-700 border-gray-600 rounded focus:ring-[var(--theme-accent)] mt-1" />
-                        <label htmlFor="commConsent" className="flex items-center ml-3 text-sm text-white">{t('applyContactPage.commConsent')} <RequiredIndicator required isMet={formData.commConsent} /></label>
+                        <input type="checkbox" id="commConsent" required checked={formData.commConsent} onChange={e => handleFormUpdate({ commConsent: e.target.checked })} className="h-4 w-4 text-[#ff8400] bg-gray-700 border-gray-600 rounded focus:ring-[#ff8400] mt-1" />
+                        <label htmlFor="commConsent" className="flex items-center ml-3 text-sm text-white">I consent to receive emails and text messages regarding my application. <RequiredIndicator required isMet={formData.commConsent} /></label>
                     </div>
                     {errors.infoCorrect && <p className="text-red-400 text-xs">{errors.infoCorrect}</p>}
                     <div className="flex items-start">
-                        <input type="checkbox" id="infoCorrect" required checked={formData.infoCorrect} onChange={e => handleFormUpdate({ infoCorrect: e.target.checked })} className="h-4 w-4 text-[var(--theme-accent)] bg-gray-700 border-gray-600 rounded focus:ring-[var(--theme-accent)] mt-1" />
-                        <label htmlFor="infoCorrect" className="flex items-center ml-3 text-sm text-white">{t('applyContactPage.infoCorrect')} <RequiredIndicator required isMet={formData.infoCorrect} /></label>
+                        <input type="checkbox" id="infoCorrect" required checked={formData.infoCorrect} onChange={e => handleFormUpdate({ infoCorrect: e.target.checked })} className="h-4 w-4 text-[#ff8400] bg-gray-700 border-gray-600 rounded focus:ring-[#ff8400] mt-1" />
+                        <label htmlFor="infoCorrect" className="flex items-center ml-3 text-sm text-white">All information I have provided is accurate. <RequiredIndicator required isMet={formData.infoCorrect} /></label>
                     </div>
                 </div>
-                {openSection === 'consent' && (
-                    <div className="flex justify-end pt-4">
-                        <button
-                            type="button"
-                            onClick={() => toggleSection('consent')}
-                            className="flex items-center text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[var(--theme-gradient-start)] to-[var(--theme-gradient-end)] hover:opacity-80 transition-opacity"
-                        >
-                            {t('applyContactPage.collapse')}
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 text-[var(--theme-accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-                            </svg>
-                        </button>
-                    </div>
-                )}
             </div>
         </fieldset>
       
       <div className="flex justify-end pt-8 flex-col items-end">
         {Object.keys(errors).length > 0 && (
             <div className="bg-red-800/50 border border-red-600 text-red-200 p-3 rounded-md mb-4 w-full max-w-sm text-sm" role="alert">
-                <p className="font-bold text-center">{t('applyContactPage.errorCorrection')}</p>
+                <p className="font-bold text-center">Please correct the highlighted errors to continue.</p>
             </div>
         )}
-        <button onClick={handleNext} className="bg-[var(--theme-accent)] hover:bg-[var(--theme-accent-hover)] text-white font-bold py-2 px-6 rounded-md transition-colors duration-200">
-          {t('common.next')}
+        <button onClick={handleNext} className="bg-[#ff8400] hover:bg-[#e67700] text-white font-bold py-2 px-6 rounded-md transition-colors duration-200">
+          Next
         </button>
       </div>
     </div>
