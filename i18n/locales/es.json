@@ -95,7 +95,7 @@
   "aiApplyPage": {
     "title": "Solicitud con IA",
     "backToHome": "Volver a Inicio",
-    "greeting": "¡Hola! Revisa las preguntas de la solicitud y déjame saber sobre tu situación. ¡Estamos aquí para ayudar!",
+    "greeting": "¡Hola! Bienvenido a Solicitud IA. Cuéntame sobre tu situación y completaremos las preguntas de la solicitud juntos.",
     "progressTitle": "Preguntas de la Solicitud",
     "additionalDetailsPreviewTitle": "Detalles Adicionales",
     "profileAcknowledgementsPreviewTitle": "Confirmación de Perfil",
