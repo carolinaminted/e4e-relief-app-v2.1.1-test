@@ -46,7 +46,7 @@ const AIApplicationStarter: React.FC<AIApplicationStarterProps> = ({ onParse, is
   };
   
   const charsRemaining = AI_GUARDRAILS.MAX_APPLICATION_DESCRIPTION_CHARS - descriptionInput.length;
-  const isNearLimit = charsRemaining < 200;
+  const isNearLimit = charsRemaining < 50;
 
   if (!isExpanded) {
     return (
